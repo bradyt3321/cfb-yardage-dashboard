@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Week 6 Yardage Numbers</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap">
+<style>
+:root{
+  --bg:#eef2ee; --surface:#ffffff; --ink:#17211b; --muted:#59675f; --line:#d3dbd3; --soft:#e6ece6; --band:#cfd9d1;
+  --accent:#1c6a43; --under:#1d4f9c; --under-bg:#e2ebf8; --over:#98480a; --over-bg:#f8e9d9; --warn:#7d5b06; --warn-bg:#f5edd2;
+  --m-under:#2257a8; --m-over:#a8500c; --good:#1a6540; --good-bg:#dff0e5; --bad:#9c2828; --bad-bg:#f6e0e0;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif; --body:"Barlow","Segoe UI",Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0f1411; --surface:#181f1b; --ink:#e5ece6; --muted:#9aa89f; --line:#2c3730; --soft:#222b26; --band:#34413a;
+  --accent:#62c391; --under:#8fbaf5; --under-bg:#1b2a40; --over:#f0a865; --over-bg:#3a2714; --warn:#e2c15c; --warn-bg:#332b10;
+  --m-under:#5b93e0; --m-over:#c97d35; --good:#6fcf9b; --good-bg:#16301f; --bad:#f09a9a; --bad-bg:#3b1a1a; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#0f1411; --surface:#181f1b; --ink:#e5ece6; --muted:#9aa89f; --line:#2c3730; --soft:#222b26; --band:#34413a;
+  --accent:#62c391; --under:#8fbaf5; --under-bg:#1b2a40; --over:#f0a865; --over-bg:#3a2714; --warn:#e2c15c; --warn-bg:#332b10;
+  --m-under:#5b93e0; --m-over:#c97d35; --good:#6fcf9b; --good-bg:#16301f; --bad:#f09a9a; --bad-bg:#3b1a1a; color-scheme:dark }
+html{color-scheme:light dark} *{box-sizing:border-box} [hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.45;padding-inline:16px;padding-block:20px 48px}
+/* full width: no max, 16px side padding from body */
+.wrap{max-width:none;margin:0;display:flex;flex-direction:column;gap:18px}
+.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:6px 24px}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(1.8rem,4.5vw,2.5rem);line-height:1;letter-spacing:.02em;text-transform:uppercase;margin:0}
+.kicker{font-family:var(--display);font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-size:.85rem}
+.stamp{color:var(--muted);font-size:.9rem}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px;min-width:0}
+.tile .lab{font-family:var(--display);font-weight:600;letter-spacing:.09em;text-transform:uppercase;font-size:.82rem;color:var(--muted)}
+.tile .big{font-family:var(--display);font-weight:700;font-size:2.3rem;line-height:1.05;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tile .big.two{font-size:1.9rem;line-height:1.27}
+.tile .big small{font-size:1.1rem;font-weight:600;color:var(--muted)}
+.tile .sub{color:var(--muted);font-size:.86rem}
+.bar{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:10px 12px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:5px;overflow:hidden}
+.seg button,.tog{font:600 .88rem var(--body);background:var(--surface);color:var(--muted);border:0;padding:6px 11px;cursor:pointer}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button[aria-pressed="true"],.tog[aria-pressed="true"]{background:var(--accent);color:var(--bg)}
+.tog{border:1px solid var(--line);border-radius:5px}
+button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+input[type=search],select{font:400 .9rem var(--body);background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:5px;padding:6px 9px}
+input[type=search]{flex:1 1 150px;min-width:0;max-width:220px}
+.count{margin-left:auto;color:var(--muted);font-size:.88rem;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+/* fits a 1280px window (content area 1248) without side-scroll; scrolls inside .scroll below ~1250 */
+#board{min-width:1150px}
+#board td.l:first-child{min-width:172px}
+#board td b{white-space:nowrap}            /* team name stays on one line; matchup/opp may wrap */
+th{font-family:var(--display);font-weight:600;font-size:.84rem;letter-spacing:.06em;text-transform:uppercase;text-align:right;color:var(--muted);padding:7px 7px;border-bottom:2px solid var(--line);white-space:nowrap;background:var(--surface)}
+th.l,td.l{text-align:left}
+td{padding:6px 7px;border-bottom:1px solid var(--soft);text-align:right;vertical-align:middle}
+tr:last-child td{border-bottom:0}
+td .opp{color:var(--muted);font-size:.82rem;display:block}
+td.num{font-family:var(--display);font-weight:700;font-size:1.2rem}
+td.num .mv{display:block;font:500 .74rem var(--body);color:var(--muted);white-space:nowrap}
+td.quiet{color:var(--muted)}
+.pill{display:inline-block;font-family:var(--display);font-weight:700;letter-spacing:.06em;font-size:.82rem;border-radius:3px;padding:2px 7px}
+.pill.u{background:var(--under-bg);color:var(--under)} .pill.o{background:var(--over-bg);color:var(--over)} .pill.n{color:var(--muted)}
+.gapv{font-family:var(--display);font-weight:700;font-size:1.2rem}
+.gapv.u{color:var(--under)} .gapv.o{color:var(--over)}
+.sz{display:inline-block;font:600 .68rem var(--body);letter-spacing:.05em;border:1px solid var(--line);border-radius:3px;padding:0 4px;margin-left:5px;color:var(--muted);vertical-align:2px;white-space:nowrap}
+.chip{display:inline-block;font-size:.7rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;border-radius:3px;padding:1px 6px;margin:1px 4px 1px 0;white-space:nowrap}
+.chip.u{background:var(--under-bg);color:var(--under)} .chip.o{background:var(--over-bg);color:var(--over)}
+.chip.w{background:var(--warn-bg);color:var(--warn)} .chip.x{background:var(--soft);color:var(--muted)}
+.scr{font-size:.82rem;color:var(--muted)} .scr b{color:var(--ink);font-weight:600}        /* wraps */
+.scr .ar{font-family:var(--display);font-weight:700;margin-right:4px;color:var(--ink)}
+.scr .rel{display:inline-block;margin-top:2px;font-size:.68rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;border-radius:3px;padding:1px 6px;white-space:nowrap}
+.scr .rel.g{background:var(--good-bg);color:var(--good)} .scr .rel.b{background:var(--bad-bg);color:var(--bad)} .scr .rel.n{background:var(--soft);color:var(--muted)}
+.wx{font-size:.82rem;color:var(--muted)} .wx.hot{color:var(--warn);font-weight:600}        /* wraps */
+svg.rg{display:block}
+.rg .axis{stroke:var(--line);stroke-width:1} .rg .band{fill:var(--band)} .rg .ours{stroke:var(--ink);stroke-width:2}
+.rg .fd{stroke:var(--surface);stroke-width:2} .rg .fd.u{fill:var(--m-under)} .rg .fd.o{fill:var(--m-over)} .rg .fd.n{fill:var(--muted)}
+.axl{display:flex;justify-content:space-between;font:500 .68rem var(--body);letter-spacing:0;text-transform:none;color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;color:var(--muted);font-size:.85rem;align-items:center}
+.legend svg{vertical-align:-3px;margin-right:5px}
+.key{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px 24px;margin:0}
+.key div{min-width:0} .key dt{font-weight:600} .key dd{margin:0;color:var(--muted);font-size:.9rem}
+h2{font-family:var(--display);font-weight:600;font-size:1.25rem;letter-spacing:.04em;text-transform:uppercase;margin:0 0 8px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:0 14px}
+summary{font-family:var(--display);font-weight:600;font-size:1.05rem;letter-spacing:.05em;text-transform:uppercase;padding:11px 0;cursor:pointer}
+details .in{padding:0 0 14px;max-width:72ch} details p{margin:0 0 8px} details ul{margin:0;padding-left:1.2em}
+.rates th,.rates td{padding:5px 8px;font-size:.9rem} .rates{min-width:0}
+.note{color:var(--muted);font-size:.86rem}
+section{min-width:0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div><div class="kicker">Stream D · team rushing yards · bet by hand</div><h1>Week 6 Yardage Numbers</h1></div>
+    <div class="stamp">FanDuel lines pulled Thu Oct 8, 3:53 PM MT · numbers through Week 5 on official box scores</div>
+  </div>
+  <div class="tiles">
+    <div class="tile"><div class="lab">Lines posted</div><div class="big">52</div><div class="sub">26 games with a FanDuel team rushing line</div></div>
+    <div class="tile"><div class="lab">Gaps of 10+ yards</div><div class="big">35</div><div class="sub">13 medium (10–20) · 22 big (20+)</div></div>
+    <div class="tile"><div class="lab">Our side of those</div><div class="big two">16 <small>under</small> · 19 <small>over</small></div><div class="sub">under means FanDuel is higher than us</div></div>
+    <div class="tile"><div class="lab">Game script on those</div><div class="big two">6 <small>with us</small> · 9 <small>against</small></div><div class="sub">20 in close games with no script lean</div></div>
+    <div class="tile"><div class="lab">Lines moved toward us</div><div class="big">9 <small>of 25</small></div><div class="sub">13 away · 3 unchanged since 1:55 AM</div></div>
+    <div class="tile"><div class="lab">Earlier lines, our side won</div><div class="big">60% <small>/</small> 43%</div><div class="sub">medium gaps / big gaps, 228 lines</div></div>
+  </div>
+  <section>
+    <div class="bar">
+      <div class="seg" role="group" aria-label="Gap size"><button data-gap="all" aria-pressed="true">All lines</button><button data-gap="mid" aria-pressed="false">Gap 10–20</button><button data-gap="big" aria-pressed="false">Gap 20+</button></div>
+      <div class="seg" role="group" aria-label="Side"><button data-side="both" aria-pressed="true">Both sides</button><button data-side="u" aria-pressed="false">Under</button><button data-side="o" aria-pressed="false">Over</button></div>
+      <div class="seg" role="group" aria-label="Game script"><button data-scr="all" aria-pressed="true">Any script</button><button data-scr="g" aria-pressed="false">Script with us</button><button data-scr="b" aria-pressed="false">Script against</button></div>
+      <button class="tog" id="t-wx" aria-pressed="false">Wind or rain</button>
+      <button class="tog" id="t-all" aria-pressed="false">Teams without a line</button>
+      <input type="search" id="q" placeholder="Find a team" aria-label="Find a team">
+      <select id="sort" aria-label="Sort"><option value="abs">Biggest gap first</option><option value="low">Under side first</option><option value="high">Over side first</option><option value="az">Team A–Z</option></select>
+      <span class="count" id="count"></span>
+    </div>
+  </section>
+  <section>
+    <div class="scroll"><table id="board">
+      <thead><tr><th class="l">Team</th><th>Side</th><th>FanDuel</th><th>Ours</th><th>Gap</th><th class="l">Game script</th>
+        <th class="l" style="width:178px">Line against our range<div class="axl"><span>0</span><span>175</span><span>350 yds</span></div></th>
+        <th>Raw</th><th>Raw + spread</th><th class="l">Weather</th><th class="l">Flags</th></tr></thead>
+      <tbody></tbody></table></div>
+    <div class="legend" style="margin-top:8px">
+      <span><svg width="14" height="14"><circle cx="7" cy="7" r="5" fill="var(--m-under)"/></svg>FanDuel line, we are lower (under side)</span>
+      <span><svg width="14" height="14"><circle cx="7" cy="7" r="5" fill="var(--m-over)"/></svg>FanDuel line, we are higher (over side)</span>
+      <span><svg width="14" height="14"><circle cx="7" cy="7" r="5" fill="var(--muted)"/></svg>within 10 yards</span>
+      <span><svg width="14" height="14"><line x1="7" y1="1" x2="7" y2="13" stroke="var(--ink)" stroke-width="2"/></svg>our number</span>
+      <span><svg width="22" height="14"><rect x="0" y="4" width="22" height="6" rx="2" fill="var(--band)"/></svg>our middle half</span>
+    </div>
+  </section>
+  <section>
+    <h2>Key</h2>
+    <dl class="key">
+      <div><dt>Gap</dt><dd>Our number minus FanDuel's line. Negative: FanDuel is higher, so our side is the under. Positive: the over.</dd></div>
+      <div><dt>Ours</dt><dd>The middle outcome from the matchup: expected carries times expected yards per carry, adjusted for opponents faced, then corrected for spread and total. Sacks count against rushing.</dd></div>
+      <div><dt>Raw · Raw + spread</dt><dd>Raw is the team's rushing yards per game averaged with what the opponent allows. Raw + spread corrects that for the spread and total.</dd></div>
+      <div><dt>Game script</dt><dd>Read from the spread, same rule as the matchup dashboard. A favorite runs more late, which pushes rushing up; an underdog abandons the run, which pushes it down. Under 7 points is a close game with no lean; 14 or more shows a double arrow. "With us" means the script pushes the same way as our side of the line. "Rain leans run" shows at a 50%+ rain chance. The spread is already inside our number, so this is context for the bet and not extra yards.</dd></div>
+      <div><dt>Middle half</dt><dd>The band where the result lands half the time. A line inside it is within one game's normal swing of our number.</dd></div>
+      <div><dt>Book beyond all 3</dt><dd>FanDuel's line is 20 or more yards above, or 20 or more below, every one of our three numbers: ours, raw, and raw + spread.</dd></div>
+      <div><dt>Weather</dt><dd>Wind in mph, gusts where the site lists them, and chance of rain. Highlighted at 15+ mph wind, 25+ mph gusts or 50%+ rain. Not in our number.</dd></div>
+      <div><dt>Run-heavy</dt><dd>Expected to run 48+ times. Our number misses by about 70 yards on these teams, against 53 overall.</dd></div>
+      <div><dt>Arrow under the line</dt><dd>How far FanDuel's line has moved since the first pull of the week at 1:55 AM.</dd></div>
+    </dl>
+  </section>
+  <section style="display:flex;flex-direction:column;gap:10px">
+    <details><summary>What earlier lines say about gaps</summary><div class="in">
+      <p>FanDuel's rushing lines from Weeks 2–5 and last postseason, scored against official results: 228 team lines. A small sample. Break-even at &minus;114 is 53.3%.</p>
+      <table class="rates"><thead><tr><th class="l">Group</th><th>Our side won</th><th>Lines</th></tr></thead><tbody>
+        <tr><td class="l">Gap of 10–20 yards</td><td>60%</td><td>63</td></tr>
+        <tr><td class="l">Gap of 20+ yards</td><td>43%</td><td>75</td></tr>
+        <tr><td class="l">We were lower by 10+ (unders)</td><td>60%</td><td>60</td></tr>
+        <tr><td class="l">We were higher by 10+ (overs)</td><td>45%</td><td>78</td></tr></tbody></table>
+      <p class="note" style="margin-top:8px">FanDuel's line missed by 53.5 yards on average and ours by 56.1. Results finished under FanDuel's line 56% of the time. The closing line moved toward our number 56% of the time and away 38%.</p>
+    </div></details>
+    <details><summary>This week's lines against our numbers</summary><div class="in">
+      <p>Average distance from FanDuel across 52 lines: ours 18.0 yards, raw + spread 17.3, raw 23.3. FanDuel prices like a season average corrected for the spread.</p>
+    </div></details>
+    <details><summary>What the upgrade test said</summary><div class="in">
+      <p>Five changes to our number were tested on 2025. None cut the average miss by the half yard required, so the number is unchanged.</p>
+      <ul><li>Carries and yards per carry entered separately: 0.13 yards better. Not enough.</li>
+      <li>Faster trust in this season's carries: slightly worse.</li>
+      <li>Weather: wet games ran about 7 rushing yards higher, close to counting but short of the bar. Wind showed almost nothing.</li>
+      <li>Top-quartile against bottom-quartile flags: no effect on the offense side, wrong direction on the defense side.</li></ul>
+    </div></details>
+    <details><summary>Dashboard tiers on past seasons</summary><div class="in">
+      <table class="rates"><thead><tr><th class="l">Rushing tag</th><th>vs raw</th><th>vs raw + spread</th><th>Rows</th></tr></thead><tbody>
+        <tr><td class="l">Under, STRONG</td><td>67%</td><td>53%</td><td>260</td></tr>
+        <tr><td class="l">Under, MISMATCH</td><td>64%</td><td>56%</td><td>270</td></tr>
+        <tr><td class="l">Over, STRONG</td><td>59%</td><td>52%</td><td>281</td></tr>
+        <tr><td class="l">Over, MISMATCH</td><td>63%</td><td>60%</td><td>281</td></tr></tbody></table>
+      <p class="note" style="margin-top:8px">Official box scores, 2019 and 2021–2025. FanDuel prices like raw + spread, so the right-hand column is the one that matters.</p>
+    </div></details>
+  </section>
+</div>
+<script>
+const D=[{"t":"Liberty","o":"Sam Houston","sp":-13.5,"tot":52.5,"fd":207.5,"v":[196,147,253,199,202],"g":-12,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":7,"g":null,"p":0},"mv":null},{"t":"Sam Houston","o":"Liberty","sp":13.5,"tot":52.5,"fd":87.5,"v":[112,72,156,114,100],"g":24,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":7,"g":null,"p":0},"mv":null},{"t":"Western Kentucky","o":"Missouri State","sp":1.5,"tot":56.5,"fd":123.5,"v":[144,101,193,150,147],"g":21,"out":true,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":3,"g":null,"p":0},"mv":-10.0},{"t":"Missouri State","o":"Western Kentucky","sp":-1.5,"tot":56.5,"fd":161.5,"v":[153,109,203,178,173],"g":-8,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":3,"g":null,"p":0},"mv":4.0},{"t":"Arkansas State","o":"South Alabama","sp":-3.5,"tot":59.5,"fd":180.5,"v":[144,100,190,159,162],"g":-36,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":10,"g":null,"p":0},"mv":2.0},{"t":"South Alabama","o":"Arkansas State","sp":3.5,"tot":59.5,"fd":180.5,"v":[201,153,260,201,185],"g":21,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":10,"g":null,"p":0},"mv":8.0},{"t":"UTSA","o":"South Florida","sp":-6.5,"tot":50.5,"fd":160.5,"v":[148,104,198,154,156],"g":-13,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":true},"mv":2.0},{"t":"South Florida","o":"UTSA","sp":6.5,"tot":50.5,"fd":157.5,"v":[127,86,175,180,159],"g":-30,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":true},"mv":7.0},{"t":"Louisville","o":"Florida State","sp":-3.5,"tot":60.5,"fd":183.5,"v":[162,117,213,159,163],"g":-21,"out":true,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":5,"g":null,"p":1},"mv":3.0},{"t":"Florida State","o":"Louisville","sp":3.5,"tot":60.5,"fd":178.5,"v":[204,156,264,175,166],"g":26,"out":false,"tag":"","rh":true,"fg":false,"w":{"d":false,"w":5,"g":null,"p":1},"mv":4.0},{"t":"Washington","o":"Iowa","sp":-2.5,"tot":41.5,"fd":97.5,"v":[100,61,144,106,108],"g":3,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":3,"g":null,"p":35},"mv":3.0},{"t":"Iowa","o":"Washington","sp":2.5,"tot":41.5,"fd":141.5,"v":[112,72,158,146,132],"g":-30,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":3,"g":null,"p":35},"mv":2.0},{"t":"San José State","o":"Wyoming","sp":-4.5,"tot":42.5,"fd":96.5,"v":[147,103,199,162,154],"g":50,"out":true,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":6,"g":null,"p":1},"mv":-13.0},{"t":"Wyoming","o":"San José State","sp":4.5,"tot":42.5,"fd":147.5,"v":[136,95,188,138,124],"g":-11,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":6,"g":null,"p":1},"mv":7.0},{"t":"Utah State","o":"Washington State","sp":-5.5,"tot":43.5,"fd":142.5,"v":[174,128,231,145,144],"g":31,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":8,"g":null,"p":6},"mv":null},{"t":"Washington State","o":"Utah State","sp":5.5,"tot":43.5,"fd":142.5,"v":[118,78,166,138,124],"g":-24,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":8,"g":null,"p":6},"mv":null},{"t":"BYU","o":"Iowa State","sp":-10.5,"tot":46.5,"fd":168.5,"v":[170,124,225,192,189],"g":1,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":8,"g":null,"p":3},"mv":0.0},{"t":"Iowa State","o":"BYU","sp":10.5,"tot":46.5,"fd":110.5,"v":[150,108,204,136,117],"g":39,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":8,"g":null,"p":3},"mv":3.0},{"t":"West Virginia","o":"Arizona","sp":3.5,"tot":60.5,"fd":239.5,"v":[179,135,235,186,175],"g":-60,"out":true,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":5,"g":null,"p":0},"mv":null},{"t":"Arizona","o":"West Virginia","sp":-3.5,"tot":60.5,"fd":136.5,"v":[140,98,187,162,166],"g":4,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":5,"g":null,"p":0},"mv":null},{"t":"Army","o":"Tulane","sp":-3.5,"tot":48.5,"fd":null,"v":[220,171,286,263,234],"g":null,"out":false,"tag":"","rh":true,"fg":false,"w":{"d":false,"w":1,"g":null,"p":0},"mv":null},{"t":"Tulane","o":"Army","sp":3.5,"tot":48.5,"fd":null,"v":[142,100,193,162,148],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":1,"g":null,"p":0},"mv":null},{"t":"Bowling Green","o":"Sacramento State","sp":-8.5,"tot":44.5,"fd":null,"v":[146,102,197,118,128],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":10,"g":18,"p":0},"mv":null},{"t":"Sacramento State","o":"Bowling Green","sp":8.5,"tot":44.5,"fd":null,"v":[128,87,178,171,145],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":10,"g":18,"p":0},"mv":null},{"t":"Nebraska","o":"Indiana","sp":7.5,"tot":47.5,"fd":114.5,"v":[117,78,164,148,131],"g":3,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":18,"g":35,"p":0},"mv":-3.0},{"t":"Indiana","o":"Nebraska","sp":-7.5,"tot":47.5,"fd":151.5,"v":[165,120,220,177,173],"g":14,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":18,"g":35,"p":0},"mv":-8.0},{"t":"Missouri","o":"Texas A&M","sp":-3.5,"tot":48.5,"fd":null,"v":[152,110,205,146,146],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":6,"g":null,"p":0},"mv":null},{"t":"Texas A&M","o":"Missouri","sp":3.5,"tot":48.5,"fd":null,"v":[107,69,152,128,122],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":6,"g":null,"p":0},"mv":null},{"t":"NC State","o":"Wake Forest","sp":3.5,"tot":59.5,"fd":null,"v":[129,87,173,155,150],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":10,"g":17,"p":38},"mv":null},{"t":"Wake Forest","o":"NC State","sp":-3.5,"tot":59.5,"fd":null,"v":[171,125,222,150,156],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":10,"g":17,"p":38},"mv":null},{"t":"Pittsburgh","o":"North Carolina","sp":-3.5,"tot":47.5,"fd":154.5,"v":[165,120,220,157,153],"g":11,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":6,"g":null,"p":0},"mv":null},{"t":"North Carolina","o":"Pittsburgh","sp":3.5,"tot":47.5,"fd":107.5,"v":[112,72,157,96,97],"g":5,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":6,"g":null,"p":0},"mv":null},{"t":"Oklahoma State","o":"UCF","sp":-10.5,"tot":53.5,"fd":127.5,"v":[157,112,207,171,177],"g":29,"out":true,"tag":"STRONG UNDER","rh":false,"fg":false,"w":{"d":false,"w":5,"g":null,"p":0},"mv":3.0},{"t":"UCF","o":"Oklahoma State","sp":10.5,"tot":53.5,"fd":141.5,"v":[140,99,191,166,145],"g":-1,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":5,"g":null,"p":0},"mv":-6.0},{"t":"Northwestern","o":"Ball State","sp":-35.5,"tot":52.5,"fd":null,"v":[259,204,327,221,249],"g":null,"out":false,"tag":"STRONG OVER","rh":true,"fg":false,"w":{"d":false,"w":15,"g":21,"p":0},"mv":null},{"t":"Ball State","o":"Northwestern","sp":35.5,"tot":52.5,"fd":null,"v":[89,53,132,142,92],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":15,"g":21,"p":0},"mv":null},{"t":"Florida","o":"South Carolina","sp":-11.5,"tot":60.5,"fd":211.5,"v":[167,121,218,158,174],"g":-45,"out":true,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":15,"g":23,"p":75},"mv":-3.0},{"t":"South Carolina","o":"Florida","sp":11.5,"tot":60.5,"fd":141.5,"v":[182,138,239,191,168],"g":41,"out":true,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":15,"g":23,"p":75},"mv":0.0},{"t":"App State","o":"Old Dominion","sp":-9.5,"tot":48.5,"fd":null,"v":[120,77,164,146,154],"g":null,"out":false,"tag":"STRONG UNDER","rh":false,"fg":false,"w":{"d":false,"w":15,"g":29,"p":82},"mv":null},{"t":"Old Dominion","o":"App State","sp":9.5,"tot":48.5,"fd":null,"v":[114,74,160,114,103],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":15,"g":29,"p":82},"mv":null},{"t":"Massachusetts","o":"Miami (OH)","sp":2.5,"tot":47.5,"fd":null,"v":[128,85,174,145,136],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":5,"g":null,"p":0},"mv":null},{"t":"Miami (OH)","o":"Massachusetts","sp":-2.5,"tot":47.5,"fd":null,"v":[122,79,167,100,108],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":5,"g":null,"p":0},"mv":null},{"t":"Akron","o":"Eastern Michigan","sp":6.5,"tot":52.5,"fd":null,"v":[130,89,178,137,128],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":8,"g":null,"p":0},"mv":null},{"t":"Eastern Michigan","o":"Akron","sp":-6.5,"tot":52.5,"fd":null,"v":[145,101,194,150,155],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":8,"g":null,"p":0},"mv":null},{"t":"Toledo","o":"Buffalo","sp":-20.5,"tot":55.5,"fd":null,"v":[218,168,279,180,199],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":9,"g":null,"p":0},"mv":null},{"t":"Buffalo","o":"Toledo","sp":20.5,"tot":55.5,"fd":null,"v":[107,70,152,142,115],"g":null,"out":false,"tag":"STRONG UNDER","rh":false,"fg":false,"w":{"d":false,"w":9,"g":null,"p":0},"mv":null},{"t":"California","o":"Virginia Tech","sp":9.5,"tot":53.5,"fd":null,"v":[103,66,147,91,89],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":null,"mv":null},{"t":"Virginia Tech","o":"California","sp":-9.5,"tot":53.5,"fd":null,"v":[166,122,219,171,176],"g":null,"out":false,"tag":"STRONG OVER","rh":false,"fg":false,"w":null,"mv":null},{"t":"Ohio","o":"Central Michigan","sp":-2.5,"tot":46.5,"fd":null,"v":[173,127,230,176,166],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":6,"g":null,"p":4},"mv":null},{"t":"Central Michigan","o":"Ohio","sp":2.5,"tot":46.5,"fd":null,"v":[158,114,212,173,156],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":6,"g":null,"p":4},"mv":null},{"t":"North Texas","o":"Charlotte","sp":-28.5,"tot":57.5,"fd":null,"v":[211,159,268,180,211],"g":null,"out":false,"tag":"MISMATCH OVER","rh":false,"fg":false,"w":{"d":false,"w":5,"g":null,"p":0},"mv":null},{"t":"Charlotte","o":"North Texas","sp":28.5,"tot":57.5,"fd":null,"v":[89,52,129,135,100],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":5,"g":null,"p":0},"mv":null},{"t":"Georgia Tech","o":"Duke","sp":6.5,"tot":44.5,"fd":104.5,"v":[117,78,165,95,90],"g":13,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":25,"g":47,"p":97},"mv":4.0},{"t":"Duke","o":"Georgia Tech","sp":-6.5,"tot":44.5,"fd":181.5,"v":[179,134,238,216,200],"g":-2,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":25,"g":47,"p":97},"mv":9.0},{"t":"Kansas State","o":"Houston","sp":-2.5,"tot":55.5,"fd":null,"v":[138,95,185,153,154],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":15,"g":22,"p":0},"mv":null},{"t":"Houston","o":"Kansas State","sp":2.5,"tot":55.5,"fd":null,"v":[177,132,233,185,171],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":15,"g":22,"p":0},"mv":null},{"t":"Michigan State","o":"Illinois","sp":2.5,"tot":48.5,"fd":144.5,"v":[128,87,176,125,121],"g":-16,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":10,"g":22,"p":0},"mv":null},{"t":"Illinois","o":"Michigan State","sp":-2.5,"tot":48.5,"fd":108.5,"v":[146,103,197,150,147],"g":38,"out":true,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":10,"g":22,"p":0},"mv":null},{"t":"Western Michigan","o":"Kent State","sp":-13.5,"tot":43.5,"fd":null,"v":[142,97,191,143,153],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":9,"g":null,"p":0},"mv":null},{"t":"Kent State","o":"Western Michigan","sp":13.5,"tot":43.5,"fd":null,"v":[102,63,147,136,111],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":9,"g":null,"p":0},"mv":null},{"t":"Navy","o":"Tulsa","sp":-2.5,"tot":48.5,"fd":null,"v":[180,135,239,206,189],"g":null,"out":false,"tag":"","rh":true,"fg":false,"w":{"d":false,"w":6,"g":null,"p":0},"mv":null},{"t":"Tulsa","o":"Navy","sp":2.5,"tot":48.5,"fd":null,"v":[122,82,170,135,128],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":6,"g":null,"p":0},"mv":null},{"t":"Notre Dame","o":"Stanford","sp":-37.5,"tot":54.5,"fd":191.5,"v":[193,142,246,160,207],"g":1,"out":false,"tag":"STRONG OVER","rh":false,"fg":false,"w":{"d":false,"w":10,"g":20,"p":0},"mv":0.0},{"t":"Stanford","o":"Notre Dame","sp":37.5,"tot":54.5,"fd":64.5,"v":[60,27,96,75,39],"g":-5,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":10,"g":20,"p":0},"mv":0.0},{"t":"Oklahoma","o":"Texas","sp":7.5,"tot":38.5,"fd":69.5,"v":[78,42,120,99,87],"g":8,"out":false,"tag":"STRONG UNDER","rh":false,"fg":false,"w":{"d":false,"w":5,"g":null,"p":0},"mv":0.0},{"t":"Texas","o":"Oklahoma","sp":-7.5,"tot":38.5,"fd":116.5,"v":[128,88,179,131,132],"g":12,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":5,"g":null,"p":0},"mv":-1.0},{"t":"Vanderbilt","o":"Ole Miss","sp":9.5,"tot":54.5,"fd":null,"v":[130,89,177,159,142],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":20,"g":30,"p":90},"mv":null},{"t":"Ole Miss","o":"Vanderbilt","sp":-9.5,"tot":54.5,"fd":null,"v":[162,117,213,123,140],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":20,"g":30,"p":90},"mv":null},{"t":"Oregon","o":"UCLA","sp":-11.5,"tot":58.5,"fd":146.5,"v":[156,111,204,123,146],"g":9,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":1,"g":null,"p":9},"mv":2.0},{"t":"UCLA","o":"Oregon","sp":11.5,"tot":58.5,"fd":166.5,"v":[154,112,206,197,171],"g":-12,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":1,"g":null,"p":9},"mv":2.0},{"t":"Temple","o":"UConn","sp":-3.5,"tot":54.5,"fd":null,"v":[187,139,243,162,161],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":5,"g":null,"p":0},"mv":null},{"t":"UConn","o":"Temple","sp":3.5,"tot":54.5,"fd":null,"v":[139,95,186,167,156],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":5,"g":null,"p":0},"mv":null},{"t":"East Carolina","o":"Rice","sp":-9.5,"tot":47.5,"fd":null,"v":[182,134,238,154,158],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":13,"g":20,"p":13},"mv":null},{"t":"Rice","o":"East Carolina","sp":9.5,"tot":47.5,"fd":null,"v":[188,142,249,194,163],"g":null,"out":false,"tag":"","rh":true,"fg":false,"w":{"d":false,"w":13,"g":20,"p":13},"mv":null},{"t":"Arkansas","o":"Tennessee","sp":13.5,"tot":51.5,"fd":106.5,"v":[121,82,168,112,98],"g":14,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":5,"g":null,"p":1},"mv":null},{"t":"Tennessee","o":"Arkansas","sp":-13.5,"tot":51.5,"fd":195.5,"v":[197,149,256,193,197],"g":1,"out":false,"tag":"MISMATCH OVER","rh":false,"fg":false,"w":{"d":false,"w":5,"g":null,"p":1},"mv":null},{"t":"Ohio State","o":"Maryland","sp":-33.5,"tot":57.5,"fd":167.5,"v":[191,142,245,147,193],"g":24,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":9,"g":null,"p":3},"mv":11.0},{"t":"Maryland","o":"Ohio State","sp":33.5,"tot":57.5,"fd":76.5,"v":[73,39,112,123,84],"g":-4,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":9,"g":null,"p":3},"mv":7.0},{"t":"Oregon State","o":"San Diego State","sp":-14.5,"tot":53.5,"fd":null,"v":[146,101,193,145,163],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":3,"g":null,"p":28},"mv":null},{"t":"San Diego State","o":"Oregon State","sp":14.5,"tot":53.5,"fd":null,"v":[130,89,178,151,128],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":3,"g":null,"p":28},"mv":null},{"t":"Marshall","o":"Coastal Carolina","sp":-3.5,"tot":58.5,"fd":null,"v":[175,128,228,165,166],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":9,"g":null,"p":68},"mv":null},{"t":"Coastal Carolina","o":"Marshall","sp":3.5,"tot":58.5,"fd":null,"v":[159,115,210,159,152],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":9,"g":null,"p":68},"mv":null},{"t":"Kentucky","o":"LSU","sp":9.5,"tot":51.5,"fd":118.5,"v":[108,71,154,123,112],"g":-10,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":15,"g":23,"p":69},"mv":-2.0},{"t":"LSU","o":"Kentucky","sp":-9.5,"tot":51.5,"fd":169.5,"v":[153,110,205,191,190],"g":-17,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":15,"g":23,"p":69},"mv":2.0},{"t":"Memphis","o":"UAB","sp":-14.5,"tot":52.5,"fd":null,"v":[218,169,281,217,217],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":20,"g":29,"p":91},"mv":null},{"t":"UAB","o":"Memphis","sp":14.5,"tot":52.5,"fd":null,"v":[146,105,198,178,148],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":20,"g":29,"p":91},"mv":null},{"t":"UTEP","o":"Nevada","sp":9.5,"tot":49.5,"fd":null,"v":[160,116,214,173,148],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":14,"g":20,"p":13},"mv":null},{"t":"Nevada","o":"UTEP","sp":-9.5,"tot":49.5,"fd":null,"v":[174,128,229,181,181],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":14,"g":20,"p":13},"mv":null},{"t":"UNLV","o":"North Dakota State","sp":3.5,"tot":48.5,"fd":null,"v":[128,87,176,140,131],"g":null,"out":false,"tag":"STRONG UNDER","rh":false,"fg":false,"w":{"d":true},"mv":null},{"t":"North Dakota State","o":"UNLV","sp":-3.5,"tot":48.5,"fd":null,"v":[140,97,189,153,150],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":true},"mv":null},{"t":"Northern Illinois","o":"Air Force","sp":7.5,"tot":46.5,"fd":null,"v":[109,71,155,102,95],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":10,"g":15,"p":0},"mv":null},{"t":"Air Force","o":"Northern Illinois","sp":-7.5,"tot":46.5,"fd":null,"v":[218,170,284,226,210],"g":null,"out":false,"tag":"MISMATCH OVER","rh":true,"fg":false,"w":{"d":false,"w":10,"g":15,"p":0},"mv":null},{"t":"Alabama","o":"Georgia","sp":-1.5,"tot":50.5,"fd":129.5,"v":[143,100,192,122,125],"g":13,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":15,"g":30,"p":76},"mv":-2.0},{"t":"Georgia","o":"Alabama","sp":1.5,"tot":50.5,"fd":136.5,"v":[106,66,148,146,140],"g":-31,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":15,"g":30,"p":76},"mv":-2.0},{"t":"Georgia Southern","o":"James Madison","sp":7.5,"tot":51.5,"fd":null,"v":[100,61,141,109,104],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":13,"g":24,"p":91},"mv":null},{"t":"James Madison","o":"Georgia Southern","sp":-7.5,"tot":51.5,"fd":null,"v":[176,130,231,172,172],"g":null,"out":false,"tag":"MISMATCH OVER","rh":false,"fg":false,"w":{"d":false,"w":13,"g":24,"p":91},"mv":null},{"t":"Louisiana Tech","o":"Louisiana","sp":-2.5,"tot":47.5,"fd":null,"v":[141,98,191,122,125],"g":null,"out":false,"tag":"STRONG UNDER","rh":false,"fg":false,"w":{"d":false,"w":15,"g":23,"p":25},"mv":null},{"t":"Louisiana","o":"Louisiana Tech","sp":2.5,"tot":47.5,"fd":null,"v":[136,94,186,183,164],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":15,"g":23,"p":25},"mv":null},{"t":"Penn State","o":"USC","sp":-1.5,"tot":54.5,"fd":138.5,"v":[143,100,192,137,140],"g":4,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":3,"g":null,"p":0},"mv":-1.0},{"t":"USC","o":"Penn State","sp":1.5,"tot":54.5,"fd":118.5,"v":[141,99,190,165,157],"g":23,"out":true,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":3,"g":null,"p":0},"mv":0.0},{"t":"Virginia","o":"Syracuse","sp":-8.5,"tot":50.5,"fd":166.5,"v":[162,119,216,150,156],"g":-4,"out":false,"tag":"MISMATCH OVER","rh":false,"fg":false,"w":{"d":false,"w":3,"g":null,"p":31},"mv":null},{"t":"Syracuse","o":"Virginia","sp":8.5,"tot":50.5,"fd":95.5,"v":[123,84,172,159,140],"g":27,"out":true,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":3,"g":null,"p":31},"mv":null},{"t":"Purdue","o":"Minnesota","sp":2.5,"tot":50.5,"fd":null,"v":[107,67,150,97,101],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":6,"g":null,"p":0},"mv":null},{"t":"Minnesota","o":"Purdue","sp":-2.5,"tot":50.5,"fd":null,"v":[146,103,197,152,150],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":6,"g":null,"p":0},"mv":null},{"t":"Utah","o":"Kansas","sp":-15.5,"tot":50.5,"fd":199.5,"v":[169,125,224,163,176],"g":-30,"out":true,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":15,"g":32,"p":46},"mv":0.0},{"t":"Kansas","o":"Utah","sp":15.5,"tot":50.5,"fd":127.5,"v":[133,94,184,169,138],"g":5,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":15,"g":32,"p":46},"mv":1.0},{"t":"Arizona State","o":"Hawai'i","sp":-20.5,"tot":49.5,"fd":null,"v":[192,144,250,155,176],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":5,"g":null,"p":69},"mv":null},{"t":"Hawai'i","o":"Arizona State","sp":20.5,"tot":49.5,"fd":null,"v":[71,37,111,120,94],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":{"d":false,"w":5,"g":null,"p":69},"mv":null},{"t":"Fresno State","o":"Boise State","sp":6.5,"tot":48.5,"fd":null,"v":[114,74,160,135,123],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":null,"mv":null},{"t":"Boise State","o":"Fresno State","sp":-6.5,"tot":48.5,"fd":null,"v":[179,133,236,185,179],"g":null,"out":false,"tag":"","rh":false,"fg":false,"w":null,"mv":null}], DMAX=350;
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const S={gap:'all',side:'both',scr:'all',wx:false,all:false};
+const sgn=n=>n>0?'+'+n:n<0?'−'+Math.abs(n):'0';
+const spr=r=>r.sp>0?'+'+r.sp:'−'+Math.abs(r.sp);
+const side=r=>r.g===null?'n':r.g<=-10?'u':r.g>=10?'o':'n';
+const hot=r=>r.w&&!r.w.d&&(r.w.w>=15||(r.w.g||0)>=25||(r.w.p||0)>=50);
+function scriptRel(r){ const s=side(r); if(s==='n') return null; if(Math.abs(r.sp)<7) return 'n';
+  const up=r.sp<0; return ((up&&s==='o')||(!up&&s==='u'))?'g':'b'; }
+function script(r){ const m=Math.abs(r.sp), fav=r.sp<0, dbl=m>=14, s=side(r), rl=scriptRel(r);
+  const wet=r.w&&!r.w.d&&(r.w.p||0)>=50?' · rain leans run':'';
+  let top;
+  if(m<7) top=`<span class="ar">—</span><b>Close game</b> (${spr(r)}) · no lean${wet}`;
+  else if(fav) top=`<span class="ar">${dbl?'▲▲':'▲'}</span><b>Favorite by ${m}</b> · runs late${wet}`;
+  else top=`<span class="ar">${dbl?'▼▼':'▼'}</span><b>Underdog by ${m}</b> · abandons run${wet}`;
+  const lab=rl===null?'':rl==='g'?`<span class="rel g">With our ${s==='u'?'under':'over'}</span>`:rl==='b'?`<span class="rel b">Against our ${s==='u'?'under':'over'}</span>`:'<span class="rel n">No lean on our side</span>';
+  return `<div class="scr">${top}${lab?'<br>'+lab:''}</div>`; }
+function wx(r){ if(!r.w) return '<span class="wx">not read</span>'; if(r.w.d) return '<span class="wx">Dome</span>';
+  return `<span class="wx${hot(r)?' hot':''}">${r.w.w} mph${r.w.g?', gusts '+r.w.g:''} · rain ${r.w.p}%</span>`; }
+function flags(r){ const o=[];
+  if(r.tag) o.push(`<span class="chip ${r.tag.includes('UNDER')?'u':'o'}">Tag: ${r.tag.toLowerCase()}</span>`);
+  if(r.out) o.push('<span class="chip w">Book beyond all 3</span>');
+  if(r.rh) o.push('<span class="chip w">Run-heavy</span>');
+  if(r.fg) o.push('<span class="chip x">Under 4 games</span>');
+  return o.join(''); }
+function range(r){ const W=165,H=26,x=v=>4+Math.max(0,Math.min(1,v/DMAX))*(W-8), s=side(r);
+  const tip=r.fd===null?`Ours ${r.v[0]}, middle half ${r.v[1]} to ${r.v[2]}`:`FanDuel ${r.fd}, ours ${r.v[0]}, middle half ${r.v[1]} to ${r.v[2]}`;
+  return `<svg class="rg" width="${W}" height="${H}" role="img" aria-label="${tip}"><title>${tip}</title>`+
+    `<line class="axis" x1="4" y1="13" x2="${W-4}" y2="13"/>`+
+    `<rect class="band" x="${x(r.v[1])}" y="9" width="${Math.max(2,x(r.v[2])-x(r.v[1]))}" height="8" rx="2"/>`+
+    `<line class="ours" x1="${x(r.v[0])}" y1="4" x2="${x(r.v[0])}" y2="22"/>`+
+    (r.fd===null?'':`<circle class="fd ${s}" cx="${x(r.fd)}" cy="13" r="6"/>`)+`</svg>`; }
+function render(){
+  const q=$('#q').value.trim().toLowerCase(), so=$('#sort').value;
+  let rows=D.filter(r=>{
+    if(r.fd===null) return S.all&&S.gap==='all'&&S.side==='both'&&S.scr==='all'&&(!S.wx||hot(r))&&(!q||(r.t+' '+r.o).toLowerCase().includes(q));
+    const a=Math.abs(r.g);
+    if(S.gap==='mid'&&!(a>=10&&a<20)) return false; if(S.gap==='big'&&a<20) return false;
+    if(S.side!=='both'&&side(r)!==S.side) return false;
+    if(S.wx&&!hot(r)) return false;
+    if(S.scr!=='all'&&scriptRel(r)!==S.scr) return false;
+    return !q||(r.t+' '+r.o).toLowerCase().includes(q); });
+  const k=r=>r.g===null?null:r.g;
+  rows.sort((a,b)=>{ if(so==='az') return a.t.localeCompare(b.t); const ka=k(a),kb=k(b);
+    if(ka===null||kb===null) return (ka===null)-(kb===null)||a.t.localeCompare(b.t);
+    return so==='abs'?Math.abs(kb)-Math.abs(ka):so==='low'?ka-kb:kb-ka; });
+  $('#count').textContent=rows.length+(rows.length===1?' row':' rows');
+  $('#board tbody').innerHTML=rows.map(r=>{ const s=side(r), a=r.g===null?0:Math.abs(r.g);
+    const mv=r.mv?`<span class="mv" title="Line move since the first pull">${r.mv>0?'▲':'▼'} ${Math.abs(r.mv)}</span>`:'';
+    return `<tr><td class="l"><b>${r.t}</b><span class="opp">vs ${r.o} · ${spr(r)} · total ${r.tot}</span></td>`+
+      `<td>${s==='n'?'<span class="pill n">—</span>':`<span class="pill ${s}">${s==='u'?'UNDER':'OVER'}</span>`}</td>`+
+      `<td class="num">${r.fd===null?'<span class="note">none</span>':r.fd}${mv}</td><td class="num">${r.v[0]}</td>`+
+      `<td>${r.g===null?'':`<span class="gapv ${s}">${sgn(r.g)}</span>${a>=20?'<span class="sz">20+</span>':a>=10?'<span class="sz">10–20</span>':''}`}</td>`+
+      `<td class="l">${script(r)}</td><td class="l">${range(r)}</td><td class="quiet">${r.v[3]}</td><td class="quiet">${r.v[4]}</td><td class="l">${wx(r)}</td><td class="l">${flags(r)}</td></tr>`;
+  }).join('')||'<tr><td class="l" colspan="11">Nothing matches these filters.</td></tr>';
+}
+$$('[data-gap]').forEach(b=>b.addEventListener('click',()=>{S.gap=b.dataset.gap;$$('[data-gap]').forEach(x=>x.setAttribute('aria-pressed',x===b));render();}));
+$$('[data-side]').forEach(b=>b.addEventListener('click',()=>{S.side=b.dataset.side;$$('[data-side]').forEach(x=>x.setAttribute('aria-pressed',x===b));render();}));
+$$('[data-scr]').forEach(b=>b.addEventListener('click',()=>{S.scr=b.dataset.scr;$$('[data-scr]').forEach(x=>x.setAttribute('aria-pressed',x===b));render();}));
+$('#t-wx').addEventListener('click',e=>{S.wx=!S.wx;e.currentTarget.setAttribute('aria-pressed',S.wx);render();});
+$('#t-all').addEventListener('click',e=>{S.all=!S.all;e.currentTarget.setAttribute('aria-pressed',S.all);render();});
+$('#q').addEventListener('input',render); $('#sort').addEventListener('change',render);
+render();
+</script>
+</body>
+</html>
