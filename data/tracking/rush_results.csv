@@ -895,22 +895,38 @@ week,team,r_yds
 6.0,Syracuse,163.0
 6.0,Wyoming,231.0
 6.0,San José State,75.0
+7.0,UL Monroe,75.0
+7.0,Louisiana Tech,152.0
+7.0,Houston,157.0
+7.0,Oklahoma State,134.0
 7.0,Kansas,168.0
 7.0,Kansas State,360.0
+7.0,TCU,41.0
+7.0,Baylor,54.0
 7.0,Arizona State,35.0
 7.0,Texas Tech,260.0
 7.0,Texas State,503.0
 7.0,Colorado State,148.0
+7.0,San Diego State,204.0
+7.0,Fresno State,135.0
+7.0,Nevada,96.0
+7.0,North Dakota State,192.0
 7.0,Wyoming,314.0
 7.0,Northern Illinois,176.0
+7.0,Ohio,265.0
+7.0,Sacramento State,127.0
 7.0,Cincinnati,233.0
 7.0,West Virginia,134.0
+7.0,San José State,233.0
+7.0,UTEP,194.0
 7.0,Sam Houston,65.0
 7.0,Western Kentucky,144.0
 7.0,Jacksonville State,173.0
 7.0,Florida International,124.0
 7.0,Delaware,70.0
 7.0,Middle Tennessee,105.0
+7.0,Washington State,168.0
+7.0,Oregon State,208.0
 7.0,Georgia State,188.0
 7.0,James Madison,250.0
 7.0,Old Dominion,65.0
@@ -919,10 +935,14 @@ week,team,r_yds
 7.0,Coastal Carolina,139.0
 7.0,Troy,126.0
 7.0,Louisiana,243.0
+7.0,Southern Miss,81.0
+7.0,Arkansas State,134.0
 7.0,Buffalo,217.0
 7.0,Massachusetts,171.0
 7.0,Kennesaw State,77.0
 7.0,Missouri State,118.0
+7.0,Notre Dame,115.0
+7.0,BYU,121.0
 7.0,East Carolina,185.0
 7.0,UAB,99.0
 7.0,Army,479.0
@@ -931,8 +951,14 @@ week,team,r_yds
 7.0,Charlotte,168.0
 7.0,Tulsa,152.0
 7.0,Rice,289.0
+7.0,Navy,294.0
+7.0,UTSA,110.0
+7.0,Elon,220.0
+7.0,Stanford,222.0
 7.0,Virginia,121.0
 7.0,SMU,158.0
+7.0,Wisconsin,148.0
+7.0,UCLA,120.0
 7.0,Michigan State,89.0
 7.0,Northwestern,134.0
 7.0,Ohio State,81.0
@@ -951,10 +977,16 @@ week,team,r_yds
 7.0,Central Michigan,158.0
 7.0,Toledo,192.0
 7.0,Eastern Michigan,34.0
+7.0,South Florida,78.0
+7.0,Kent State,63.0
 7.0,Georgia,113.0
 7.0,Auburn,192.0
+7.0,Vanderbilt,116.0
+7.0,Arkansas,187.0
 7.0,Texas,99.0
 7.0,Florida,158.0
+7.0,Oklahoma,76.0
+7.0,Kentucky,72.0
 7.0,Mississippi State,170.0
 7.0,LSU,90.0
 7.0,Ole Miss,257.0
@@ -965,8 +997,12 @@ week,team,r_yds
 7.0,Alabama,54.0
 7.0,Tulane,150.0
 7.0,Memphis,176.0
+7.0,Miami,257.0
+7.0,Florida State,138.0
 7.0,Virginia Tech,159.0
 7.0,Georgia Tech,93.0
+7.0,Syracuse,123.0
+7.0,Louisville,115.0
 7.0,Pittsburgh,199.0
 7.0,Boston College,104.0
 7.0,North Carolina,135.0
