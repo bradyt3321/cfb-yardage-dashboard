@@ -895,13 +895,13 @@ week,team,r_yds
 6.0,Syracuse,163.0
 6.0,Wyoming,231.0
 6.0,San José State,75.0
-7.0,UL Monroe,75.0
-7.0,Louisiana Tech,152.0
-7.0,Houston,157.0
+7.0,UL Monroe,63.0
+7.0,Louisiana Tech,160.0
+7.0,Houston,162.0
 7.0,Oklahoma State,134.0
 7.0,Kansas,168.0
-7.0,Kansas State,360.0
-7.0,TCU,41.0
+7.0,Kansas State,359.0
+7.0,TCU,33.0
 7.0,Baylor,54.0
 7.0,Arizona State,35.0
 7.0,Texas Tech,260.0
@@ -918,7 +918,7 @@ week,team,r_yds
 7.0,Cincinnati,233.0
 7.0,West Virginia,134.0
 7.0,San José State,233.0
-7.0,UTEP,194.0
+7.0,UTEP,180.0
 7.0,Sam Houston,65.0
 7.0,Western Kentucky,144.0
 7.0,Jacksonville State,173.0
@@ -943,7 +943,7 @@ week,team,r_yds
 7.0,Missouri State,118.0
 7.0,Notre Dame,115.0
 7.0,BYU,121.0
-7.0,East Carolina,185.0
+7.0,East Carolina,191.0
 7.0,UAB,99.0
 7.0,Army,479.0
 7.0,Florida Atlantic,108.0
@@ -955,18 +955,24 @@ week,team,r_yds
 7.0,UTSA,110.0
 7.0,Elon,220.0
 7.0,Stanford,222.0
+7.0,Wake Forest,220.0
+7.0,California,75.0
 7.0,Virginia,121.0
 7.0,SMU,158.0
+7.0,Utah,131.0
+7.0,Colorado,138.0
 7.0,Wisconsin,148.0
 7.0,UCLA,120.0
 7.0,Michigan State,89.0
 7.0,Northwestern,134.0
-7.0,Ohio State,81.0
+7.0,Ohio State,78.0
 7.0,Indiana,73.0
-7.0,Rutgers,156.0
+7.0,Rutgers,151.0
 7.0,Maryland,115.0
 7.0,Penn State,65.0
 7.0,Michigan,211.0
+7.0,Oregon,129.0
+7.0,Nebraska,78.0
 7.0,Purdue,98.0
 7.0,Washington,186.0
 7.0,Ball State,240.0
@@ -996,7 +1002,7 @@ week,team,r_yds
 7.0,Tennessee,150.0
 7.0,Alabama,54.0
 7.0,Tulane,150.0
-7.0,Memphis,176.0
+7.0,Memphis,182.0
 7.0,Miami,257.0
 7.0,Florida State,138.0
 7.0,Virginia Tech,159.0
@@ -1004,10 +1010,12 @@ week,team,r_yds
 7.0,Syracuse,123.0
 7.0,Louisville,115.0
 7.0,Pittsburgh,199.0
-7.0,Boston College,104.0
+7.0,Boston College,103.0
 7.0,North Carolina,135.0
 7.0,Duke,124.0
 7.0,Charleston Southern,26.0
 7.0,Clemson,231.0
+7.0,New Mexico,243.0
+7.0,Hawai'i,48.0
 7.0,UNLV,130.0
 7.0,Air Force,430.0
