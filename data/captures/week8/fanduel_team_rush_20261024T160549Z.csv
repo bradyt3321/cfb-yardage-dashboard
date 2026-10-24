@@ -1,0 +1,4 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+1f2a24570e2ca6de4516eae60b021507,2026-10-24T16:10:00Z,Auburn Tigers,LSU Tigers,2026-10-24T16:05:49+00:00,151.5,-113,-113,150.5,-113,-113,,,7.5,52.5,
+7a2b82b534f197acfe4913fcdaa86792,2026-10-24T16:10:00Z,Cincinnati Bearcats,Texas Tech Red Raiders,2026-10-24T16:05:49+00:00,140.5,-113,-113,201.5,-113,-113,,,10.5,57.5,
+259f3312084b229ac2b74d414d36869f,2026-10-24T16:15:00Z,Michigan Wolverines,Indiana Hoosiers,2026-10-24T16:05:49+00:00,142.5,-113,-113,130.5,-113,-113,,,7.5,43.5,
