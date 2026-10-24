@@ -1,0 +1,8 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+423bd1c75b601ccfabfca3759cc69a3f,2026-10-24T23:30:00Z,Arizona Wildcats,Iowa State Cyclones,2026-10-24T23:05:32+00:00,135.5,-113.0,-113.0,134.5,-113.0,-113.0,,,-11.5,51.5,
+cc78a514047b7ed0d2c5a3acdf3cdc1e,2026-10-24T23:30:00Z,Kentucky Wildcats,Vanderbilt Commodores,2026-10-24T23:05:32+00:00,158.5,-113.0,-113.0,96.5,-113.0,-113.0,,,-10.5,51.5,
+d73ad8085e6fe1f88a0f79d9538083d6,2026-10-24T23:30:00Z,North Carolina Tar Heels,Syracuse Orange,2026-10-24T23:05:32+00:00,,,,,,,,,-8.5,48.5,
+df510525b83238b6e856c80c353bb32a,2026-10-24T23:30:00Z,Texas Longhorns,Ole Miss Rebels,2026-10-24T23:05:32+00:00,148.5,-113.0,-113.0,118.5,-113.0,-113.0,,,-3.5,54.5,
+c4e171dd82e86c3a4dd50d4d3b54edab,2026-10-24T23:30:00Z,Texas State Bobcats,Utah State Aggies,2026-10-24T23:05:32+00:00,256.5,-113.0,-113.0,138.5,-113.0,-113.0,,,-14.5,59.5,
+440de8df25b4cca8ebcecb7431bbb5c0,2026-10-24T23:35:00Z,Wisconsin Badgers,USC Trojans,2026-10-24T23:05:32+00:00,152.5,-113.0,-113.0,112.5,-113.0,-113.0,,,2.5,50.5,
+d99b11b38d1cf1cbb334246263c53ac9,2026-10-25T00:00:00Z,Tulane Green Wave,UTSA Roadrunners,2026-10-24T23:05:32+00:00,160.5,-113.0,-113.0,162.5,-113.0,-113.0,,,2.5,51.5,
