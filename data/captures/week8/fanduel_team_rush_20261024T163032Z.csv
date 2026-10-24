@@ -1,0 +1,4 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+e7321bb418f765df74afd2851bd0fade,2026-10-24T17:00:00Z,Kent State Golden Flashes,Akron Zips,2026-10-24T16:30:32+00:00,136.5,-113,-113,121.5,-113,-113,,,-2.5,47.5,
+ba6abfebaef34d88099fa6dc6640dc08,2026-10-24T17:00:00Z,Kansas Jayhawks,Baylor Bears,2026-10-24T16:30:32+00:00,159.5,-113,-113,126.5,-113,-113,,,-1.5,53.5,
+7b91563277082145d844f94b9ef1a8a6,2026-10-24T17:00:00Z,Central Michigan Chippewas,Miami (OH) RedHawks,2026-10-24T16:30:32+00:00,174.5,-113,-113,117.5,-113,-113,,,3.5,40.5,
