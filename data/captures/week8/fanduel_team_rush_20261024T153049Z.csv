@@ -1,0 +1,10 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+1f2a24570e2ca6de4516eae60b021507,2026-10-24T16:00:00Z,Auburn Tigers,LSU Tigers,2026-10-24T15:30:49+00:00,154.5,-113,-113,152.5,-113,-113,,,7.5,52.5,
+bbbabc2490914e9a4d1e619a32461b1f,2026-10-24T16:00:00Z,SMU Mustangs,California Golden Bears,2026-10-24T15:30:49+00:00,163.5,-113,-113,85.5,-113,-113,,,-18.5,55.5,
+7a2b82b534f197acfe4913fcdaa86792,2026-10-24T16:00:00Z,Cincinnati Bearcats,Texas Tech Red Raiders,2026-10-24T15:30:49+00:00,140.5,-113,-113,201.5,-113,-113,,,10.5,57.5,
+f8b869953172e3a19c4cf347b05c1ee8,2026-10-24T16:00:00Z,Florida Atlantic Owls,Rice Owls,2026-10-24T15:30:49+00:00,168.5,-113,-113,262.5,-113,-113,,,-9.5,54.5,
+259f3312084b229ac2b74d414d36869f,2026-10-24T16:00:00Z,Michigan Wolverines,Indiana Hoosiers,2026-10-24T15:30:49+00:00,130.5,-113,-113,129.5,-113,-113,,,7.5,42.5,
+2d125f14eca5c6eb1417f126cafde7c0,2026-10-24T16:00:00Z,Miami Hurricanes,Pittsburgh Panthers,2026-10-24T15:30:49+00:00,149.5,-113,-113,96.5,-113,-113,,,-20.5,50.5,
+99932501288d30e4693c828c0ab2455e,2026-10-24T16:00:00Z,Northwestern Wildcats,Rutgers Scarlet Knights,2026-10-24T15:30:49+00:00,191.5,-113,-113,117.5,-113,-113,,,-14.5,58.5,
+1067cba701eaa40c3724cceda30524c6,2026-10-24T16:00:00Z,TCU Horned Frogs,West Virginia Mountaineers,2026-10-24T15:30:49+00:00,141.5,-113,-113,190.5,-113,-113,,,-10.5,58.5,
+1388547b792afa0aa6769aa1b7645b28,2026-10-24T16:00:00Z,Toledo Rockets,Western Michigan Broncos,2026-10-24T15:30:49+00:00,143.5,-113,-113,183.5,-113,-113,,,-2.5,47.5,
