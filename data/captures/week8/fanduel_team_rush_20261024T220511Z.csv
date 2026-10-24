@@ -1,0 +1,5 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+c5223791e733b6bc0744618614b007b7,2026-10-24T22:30:00Z,Colorado State Rams,San Diego State Aztecs,2026-10-24T22:05:11+00:00,203.5,-113,-113,199.5,-113,-113,,,1.5,57.5,
+c6283d3fd69d830d2f74d8ef27bdefab,2026-10-24T23:00:00Z,Arkansas State Red Wolves,Georgia State Panthers,2026-10-24T22:05:11+00:00,131.5,-113,-113,186.5,-113,-113,,,2.5,58.5,
+04db3b581ae63446a409f2ad30868e20,2026-10-24T23:00:00Z,Clemson Tigers,Virginia Tech Hokies,2026-10-24T22:05:11+00:00,158.5,-113,-113,109.5,-113,-113,,,-2.5,50.5,
+a28a6841bdc11350063d5e6d57fbd577,2026-10-24T23:00:00Z,Oklahoma State Cowboys,Colorado Buffaloes,2026-10-24T22:05:11+00:00,142.5,-113,-113,114.5,-113,-113,,,-13.5,54.5,
