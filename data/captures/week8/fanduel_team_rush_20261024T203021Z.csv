@@ -1,0 +1,4 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+8e7bee2f3b66bdb4f992e30400aca4cb,2026-10-24T21:00:00Z,Southern Mississippi Golden Eagles,Louisiana Ragin Cajuns,2026-10-24T20:30:21+00:00,93.5,-113,-113,171.5,-113,-113,,,11.5,53.5,
+7d846d56825d93b254d23d0929bba224,2026-10-24T21:00:00Z,Louisiana Tech Bulldogs,Old Dominion Monarchs,2026-10-24T20:30:21+00:00,158.5,-113,-113,69.5,-113,-113,,,-13.5,43.5,
+c8b1ac2d988cf0d2c90200c8731bcde1,2026-10-24T21:00:00Z,Nevada Wolf Pack,San Jose State Spartans,2026-10-24T20:30:21+00:00,180.5,-113,-113,106.5,-113,-113,,,-5.5,45.5,
