@@ -10,8 +10,8 @@ wk,team,side,line,wl,pnl
 5,Illinois,over,179.5,L,-0.5
 5,New Mexico,over,231.5,L,-0.5
 5,Rutgers,under,98.5,W,0.439
-5,Marshal,under,136.5,,
-5,MTSU,under,89.5,,
+5,Marshall,under,136.5,W,0.439
+5,Middle Tennessee,under,89.5,W,0.439
 5,Boston College,under,114.5,W,0.417
 6,Illinois,over,108.5,W,0.439
 6,Arkansas State,under,180.5,W,0.442
@@ -50,5 +50,5 @@ wk,team,side,line,wl,pnl
 8,Northwestern,over,190.5,W,0.439
 8,Utah State,under,151.5,W,0.439
 8,Michigan,under,141.5,W,0.439
-8,Pitt,under,96.5,,
+8,Pittsburgh,under,96.5,W,0.5
 8,Troy,over,188.5,L,-0.5
