@@ -1,15 +1,15 @@
 week,number,team,opponent,kickoff_utc,open_pull,open_line,value,gap,side,team_spread,tier_v1,rush_yds,result,wl
-2026-W9,A,Middle Tennessee,Kennesaw State,2026-10-28T23:00:00Z,2026-10-28T06:04:33+00:00,153.5,135.3,-18.2,under,-2.5,B,,,
-2026-W9,C5,Middle Tennessee,Kennesaw State,2026-10-28T23:00:00Z,2026-10-28T06:04:33+00:00,153.5,141.7,-11.8,under,-2.5,B,,,
-2026-W9,C3,Middle Tennessee,Kennesaw State,2026-10-28T23:00:00Z,2026-10-28T06:04:33+00:00,153.5,136.4,-17.1,under,-2.5,B,,,
-2026-W9,A,Kennesaw State,Middle Tennessee,2026-10-28T23:00:00Z,2026-10-28T06:04:33+00:00,153.5,136.3,-17.2,under,2.5,B,,,
-2026-W9,C5,Kennesaw State,Middle Tennessee,2026-10-28T23:00:00Z,2026-10-28T06:04:33+00:00,153.5,133.8,-19.7,under,2.5,B,,,
-2026-W9,C3,Kennesaw State,Middle Tennessee,2026-10-28T23:00:00Z,2026-10-28T06:04:33+00:00,153.5,137.0,-16.5,under,2.5,B,,,
-2026-W9,A,New Mexico State,Jacksonville State,2026-10-29T00:00:00Z,2026-10-28T06:04:33+00:00,158.5,141.0,-17.5,under,3.5,B,,,
-2026-W9,C5,New Mexico State,Jacksonville State,2026-10-29T00:00:00Z,2026-10-28T06:04:33+00:00,158.5,129.5,-29.0,under,3.5,B,,,
-2026-W9,C3,New Mexico State,Jacksonville State,2026-10-29T00:00:00Z,2026-10-28T06:04:33+00:00,158.5,141.5,-17.0,under,3.5,B,,,
-2026-W9,C5,Jacksonville State,New Mexico State,2026-10-29T00:00:00Z,2026-10-28T06:04:33+00:00,136.5,148.7,12.2,over,-3.5,B,,,
-2026-W9,C3,Jacksonville State,New Mexico State,2026-10-29T00:00:00Z,2026-10-28T06:04:33+00:00,136.5,146.6,10.1,over,-3.5,B,,,
+2026-W9,A,Middle Tennessee,Kennesaw State,2026-10-28T23:00:00Z,2026-10-28T06:04:33+00:00,153.5,135.3,-18.2,under,-2.5,B,197.0,OVER,L
+2026-W9,C5,Middle Tennessee,Kennesaw State,2026-10-28T23:00:00Z,2026-10-28T06:04:33+00:00,153.5,141.7,-11.8,under,-2.5,B,197.0,OVER,L
+2026-W9,C3,Middle Tennessee,Kennesaw State,2026-10-28T23:00:00Z,2026-10-28T06:04:33+00:00,153.5,136.4,-17.1,under,-2.5,B,197.0,OVER,L
+2026-W9,A,Kennesaw State,Middle Tennessee,2026-10-28T23:00:00Z,2026-10-28T06:04:33+00:00,153.5,136.3,-17.2,under,2.5,B,112.0,UNDER,W
+2026-W9,C5,Kennesaw State,Middle Tennessee,2026-10-28T23:00:00Z,2026-10-28T06:04:33+00:00,153.5,133.8,-19.7,under,2.5,B,112.0,UNDER,W
+2026-W9,C3,Kennesaw State,Middle Tennessee,2026-10-28T23:00:00Z,2026-10-28T06:04:33+00:00,153.5,137.0,-16.5,under,2.5,B,112.0,UNDER,W
+2026-W9,A,New Mexico State,Jacksonville State,2026-10-29T00:00:00Z,2026-10-28T06:04:33+00:00,158.5,141.0,-17.5,under,3.5,B,192.0,OVER,L
+2026-W9,C5,New Mexico State,Jacksonville State,2026-10-29T00:00:00Z,2026-10-28T06:04:33+00:00,158.5,129.5,-29.0,under,3.5,B,192.0,OVER,L
+2026-W9,C3,New Mexico State,Jacksonville State,2026-10-29T00:00:00Z,2026-10-28T06:04:33+00:00,158.5,141.5,-17.0,under,3.5,B,192.0,OVER,L
+2026-W9,C5,Jacksonville State,New Mexico State,2026-10-29T00:00:00Z,2026-10-28T06:04:33+00:00,136.5,148.7,12.2,over,-3.5,B,324.0,OVER,W
+2026-W9,C3,Jacksonville State,New Mexico State,2026-10-29T00:00:00Z,2026-10-28T06:04:33+00:00,136.5,146.6,10.1,over,-3.5,B,324.0,OVER,W
 2026-W9,C5,North Texas,Florida Atlantic,2026-10-29T23:30:00Z,2026-10-28T06:04:33+00:00,212.5,233.9,21.4,over,-13.5,B,,,
 2026-W9,C5,Florida Atlantic,North Texas,2026-10-29T23:30:00Z,2026-10-28T06:04:33+00:00,127.5,114.5,-13.0,under,13.5,A,,,
 2026-W9,A,UCF,Baylor,2026-10-30T23:30:00Z,2026-10-28T06:04:33+00:00,118.5,141.0,22.5,over,-1.5,B,,,
