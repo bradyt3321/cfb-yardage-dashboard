@@ -1,0 +1,5 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+1841dedea57dac1d1de462bb44f8a732,2026-10-31T20:05:00Z,San Jose State Spartans,New Mexico Lobos,2026-10-31T20:01:44+00:00,95.5,-113.0,-113.0,214.5,-113.0,-113.0,,,14.5,43.5,
+630ed6c8993fda8943e528a465e55518,2026-10-31T20:15:00Z,UCLA Bruins,Nevada Wolf Pack,2026-10-31T20:01:44+00:00,,,,,,,,,-22.5,42.5,
+096584989b4dd0a84650c37eb980a8b3,2026-10-31T20:15:00Z,Oklahoma Sooners,South Carolina Gamecocks,2026-10-31T20:01:44+00:00,107.5,-113.0,-113.0,123.5,-113.0,-113.0,,,-3.5,44.5,
+7fd2d018fdc5930fd62188de968a901c,2026-10-31T20:15:00Z,Penn State Nittany Lions,Purdue Boilermakers,2026-10-31T20:01:44+00:00,157.5,-113.0,-113.0,112.5,-113.0,-113.0,,,-10.5,56.5,
