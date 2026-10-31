@@ -1,0 +1,5 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+2d5a76d917c23b2f5036eb774608d1c9,2026-10-31T16:15:00Z,Texas Tech Red Raiders,Arizona Wildcats,2026-10-31T16:10:05+00:00,208.5,-113,-113,107.5,-113,-113,,,-3.5,55.5,
+dea96094c29a9f24d7dc07a5d848afd7,2026-10-31T16:30:00Z,Rutgers Scarlet Knights,Michigan Wolverines,2026-10-31T16:10:05+00:00,124.5,-113,-113,202.5,-113,-113,,,16.5,46.5,
+3f36c41ee29e9339f71fada56d832914,2026-10-31T16:55:00Z,Ole Miss Rebels,Auburn Tigers,2026-10-31T16:10:05+00:00,149.5,-113,-113,171.5,-113,-113,,,-10.5,58.5,
+e88d624c699646a03bac59eb193a09bf,2026-10-31T17:00:00Z,Old Dominion Monarchs,Marshall Thundering Herd,2026-10-31T16:10:05+00:00,109.5,-113,-113,130.5,-113,-113,,,2.5,46.5,
