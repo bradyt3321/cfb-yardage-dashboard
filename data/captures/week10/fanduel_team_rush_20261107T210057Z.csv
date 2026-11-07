@@ -1,0 +1,4 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+648b835a42e9a23db353a0f0b326afdb,2026-11-07T21:10:00Z,Troy Trojans,Louisiana Tech Bulldogs,2026-11-07T21:00:57+00:00,168.5,-113.0,-113.0,139.5,-113.0,-113.0,,,6.5,47.5,
+2a6e2d9ca0d2fc85a4164e9c0f25a05f,2026-11-07T21:15:00Z,Wisconsin Badgers,Rutgers Scarlet Knights,2026-11-07T21:00:57+00:00,198.5,-113.0,-113.0,117.5,-113.0,-113.0,,,-18.5,45.5,
+028ce5ee2c58281cf935f06edc90d671,2026-11-07T21:25:00Z,Mississippi State Bulldogs,Vanderbilt Commodores,2026-11-07T21:00:57+00:00,,,,,,,,,-2.5,48.5,
