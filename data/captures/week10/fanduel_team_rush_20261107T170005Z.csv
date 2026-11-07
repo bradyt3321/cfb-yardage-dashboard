@@ -1,0 +1,9 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+3ae8e2db7acc8a4d581b1e6a3ecbbd24,2026-11-07T17:05:00Z,Boston College Eagles,Florida State Seminoles,2026-11-07T17:00:05+00:00,174.5,-113.0,-113.0,167.5,-113.0,-113.0,,,5.5,53.5,
+c3e23ea05d6570fdb90c3ddb225fd3e4,2026-11-07T17:05:00Z,Syracuse Orange,Clemson Tigers,2026-11-07T17:00:05+00:00,142.5,-113.0,-113.0,149.5,-113.0,-113.0,,,1.5,49.5,
+8db5a11826fc84a5a6506c9b85979e70,2026-11-07T17:10:00Z,Utah Utes,BYU Cougars,2026-11-07T17:00:05+00:00,144.5,-113.0,-113.0,131.5,-113.0,-113.0,,,-4.5,49.5,
+7233098d6f4e9fe94606ee2f3343de84,2026-11-07T17:10:00Z,Baylor Bears,Iowa State Cyclones,2026-11-07T17:00:05+00:00,136.5,-113.0,-113.0,134.5,-113.0,-113.0,,,-9.5,50.5,
+5b05bf2ff27508703418dcf70079a22f,2026-11-07T17:10:00Z,Minnesota Golden Gophers,UCLA Bruins,2026-11-07T17:00:05+00:00,,,,,,,,,3.5,38.5,
+59263b8c355e171b2bcd5c1827a36b7e,2026-11-07T17:30:00Z,NC State Wolfpack,Duke Blue Devils,2026-11-07T17:00:05+00:00,121.5,-113.0,-113.0,170.5,-113.0,-113.0,,,4.5,53.5,
+841d7821e82447f8a7d8592ec4584eec,2026-11-07T17:30:00Z,Purdue Boilermakers,Maryland Terrapins,2026-11-07T17:00:05+00:00,,,,,,,,,-4.5,56.5,
+40065b11db334359a18c868e9af4d7cd,2026-11-07T17:45:00Z,Auburn Tigers,Arkansas Razorbacks,2026-11-07T17:00:05+00:00,180.5,-113.0,-113.0,115.5,-113.0,-113.0,,,-10.5,53.5,
