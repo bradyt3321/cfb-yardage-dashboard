@@ -1,0 +1,13 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+b1234e330dc3f9fbbe77f969dd074cc7,2026-11-07T20:35:00Z,Georgia Southern Eagles,Marshall Thundering Herd,2026-11-07T20:30:11+00:00,124.5,-113.0,-113.0,156.5,-113.0,-113.0,,,-7.5,54.5,
+deb5de88acb22f9a3e969c137fd65cb3,2026-11-07T20:35:00Z,Middle Tennessee Blue Raiders,Western Kentucky Hilltoppers,2026-11-07T20:30:11+00:00,157.5,-113.0,-113.0,154.5,-113.0,-113.0,,,2.5,53.5,
+cd61922c472fea089e42662bc725f46b,2026-11-07T20:35:00Z,Washington Huskies,Penn State Nittany Lions,2026-11-07T20:30:11+00:00,,,,,,,,,-2.5,46.5,
+00f194290bfcdfebb1d8456057b20614,2026-11-07T20:40:00Z,LSU Tigers,Alabama Crimson Tide,2026-11-07T20:30:11+00:00,133.5,-113.0,-113.0,120.5,-113.0,-113.0,,,-5.5,54.5,
+c2784b24d84fa71e7368fd775914c37d,2026-11-07T20:40:00Z,Ohio State Buckeyes,Oregon Ducks,2026-11-07T20:30:11+00:00,134.5,-113.0,-113.0,83.5,-113.0,-113.0,,,-7.5,44.5,
+c74c1b98aca90ebf335b4028d44c2095,2026-11-07T20:45:00Z,Kansas Jayhawks,UCF Knights,2026-11-07T20:30:11+00:00,156.5,-113.0,-113.0,126.5,-113.0,-113.0,,,-5.5,48.5,
+b5f8faa111f5c25846fcfc22f1b664a1,2026-11-07T21:00:00Z,Florida International Panthers,Missouri State Bears,2026-11-07T20:30:11+00:00,119.5,-113.0,-113.0,115.5,-113.0,-113.0,,,-5.5,49.5,
+648b835a42e9a23db353a0f0b326afdb,2026-11-07T21:00:00Z,Troy Trojans,Louisiana Tech Bulldogs,2026-11-07T20:30:11+00:00,168.5,-113.0,-113.0,139.5,-113.0,-113.0,,,6.5,47.5,
+55e2553780b7d3d06d1fe7a4ffa9474b,2026-11-07T21:00:00Z,North Texas Mean Green,Rice Owls,2026-11-07T20:30:11+00:00,,,,,,,,,-15.5,64.5,
+796b0be4ed0d775756eff53b5803125a,2026-11-07T21:00:00Z,San Jose State Spartans,Northern Illinois Huskies,2026-11-07T20:30:11+00:00,149.5,-113.0,-113.0,117.5,-113.0,-113.0,,,-11.5,52.5,
+028ce5ee2c58281cf935f06edc90d671,2026-11-07T21:15:00Z,Mississippi State Bulldogs,Vanderbilt Commodores,2026-11-07T20:30:11+00:00,,,,,,,,,-2.5,48.5,
+2a6e2d9ca0d2fc85a4164e9c0f25a05f,2026-11-07T21:15:00Z,Wisconsin Badgers,Rutgers Scarlet Knights,2026-11-07T20:30:11+00:00,198.5,-113.0,-113.0,117.5,-113.0,-113.0,,,-18.5,45.5,
