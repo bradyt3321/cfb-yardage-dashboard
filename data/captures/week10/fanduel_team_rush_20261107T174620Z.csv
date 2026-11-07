@@ -1,0 +1,4 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+40065b11db334359a18c868e9af4d7cd,2026-11-07T17:50:00Z,Auburn Tigers,Arkansas Razorbacks,2026-11-07T17:46:20+00:00,180.5,-113,-113,115.5,-113,-113,,,-10.5,53.5,
+5d0347c41d222ef115610663cac2f865,2026-11-07T18:00:00Z,Coastal Carolina Chanticleers,Old Dominion Monarchs,2026-11-07T17:46:20+00:00,129.5,-113,-113,111.5,-113,-115,,,-6.5,43.5,
+f3d964c6b45c36f9e6009c47e64f96db,2026-11-07T18:00:00Z,Kansas State Wildcats,Oklahoma State Cowboys,2026-11-07T17:46:20+00:00,165.5,-113,-113,157.5,-113,-113,,,7.5,63.5,
