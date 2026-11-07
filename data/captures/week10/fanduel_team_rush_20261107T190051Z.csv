@@ -1,0 +1,4 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+5304671601ad3064a66a332cbb09313f,2026-11-07T19:30:00Z,Appalachian State Mountaineers,Georgia State Panthers,2026-11-07T19:00:51+00:00,135.5,-113,-113,159.5,-113,-113,,,-6.5,53.5,
+6ffa2c2d3470751aa022854ec50dcce6,2026-11-07T20:00:00Z,Arkansas State Red Wolves,UL Monroe Warhawks,2026-11-07T19:00:51+00:00,145.5,-113,-113,130.5,-113,-113,,,-14.5,52.5,
+208e919ada4f5cf6d27af719879d1880,2026-11-07T20:00:00Z,South Carolina Gamecocks,Texas A&M Aggies,2026-11-07T19:00:51+00:00,153.5,-113,-113,140.5,-113,-113,,,-6.5,52.5,
