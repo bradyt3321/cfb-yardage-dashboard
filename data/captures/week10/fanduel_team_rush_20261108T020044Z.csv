@@ -1,0 +1,4 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+d74a875341a00e77cf86ecfb7569edd3,2026-11-08T02:30:00Z,Utah State Aggies,Fresno State Bulldogs,2026-11-08T02:00:44+00:00,138.5,-113,-113,126.5,-113,-113,,,1.5,44.5,
+eca05dc53fc3a8dd74622a4b7657bc3b,2026-11-08T02:30:00Z,UTEP Miners,Hawaii Rainbow Warriors,2026-11-08T02:00:44+00:00,162.5,-113,-113,98.5,-113,-113,,,7.5,48.5,
+6bfae12b9d44d12ca7dde4f4f4aedc7d,2026-11-08T02:30:00Z,Texas Tech Red Raiders,West Virginia Mountaineers,2026-11-08T02:00:44+00:00,258.5,-113,-113,189.5,-113,-113,,,-16.5,67.5,
