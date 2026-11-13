@@ -1,11 +1,11 @@
 {
- "version": "inputs-v4 (model A, DL-Y-016; play score v1 DL-Y-019; run-first DL-Y-020; QB flags DL-Y-022; VPS weather map; shadow C3/C5 DL-Y-025; game-script shares DL-Y-024; BIG PLAY + ours_capped DL-Y-027)",
+ "version": "inputs-v4 (model A, DL-Y-016; play score v1 DL-Y-019; run-first DL-Y-020; QB flags DL-Y-022; VPS weather map; shadow C3/C5 DL-Y-025; game-script shares DL-Y-024; BIG PLAY + ours_capped DL-Y-027; v2 rate + rushing-defense terciles DL-Y-032, tooltip only)",
  "week": 11,
  "season": 2026,
  "as_of_ord": 11,
- "generated_utc": "2026-11-12T18:57:09+00:00",
- "model_commit": "a5f5e23eea2a3015085c53edbe80a062b3400d0a",
- "repo_head": "a15d92369885b8dde488c591ce140a2270855c3b",
+ "generated_utc": "2026-11-13T06:20:41+00:00",
+ "model_commit": "f30522da540cca3d07eed88896017392a8a6a48e",
+ "repo_head": "9895004747334407bde1380bf77346c1d9ac2c64",
  "preliminary": false,
  "preliminary_reason": "",
  "formulas": {
@@ -270,6 +270,11 @@
    "capped_ypc": 3.7431,
    "allowed_big_play_share": 0.3376,
    "base_rush_capped": 113.324911,
+   "big_play_rate": 2.29,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 6.49,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "TCU Horned Frogs"
    ]
@@ -328,6 +333,11 @@
    "capped_ypc": 4.5663,
    "allowed_big_play_share": 0.1453,
    "base_rush_capped": 140.910259,
+   "big_play_rate": 5.02,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 1.62,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Kansas State Wildcats"
    ]
@@ -386,6 +396,11 @@
    "capped_ypc": 4.6571,
    "allowed_big_play_share": 0.1948,
    "base_rush_capped": 154.299664,
+   "big_play_rate": 3.67,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 2.77,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "BYU Cougars"
    ]
@@ -444,6 +459,11 @@
    "capped_ypc": 4.0433,
    "allowed_big_play_share": 0.1952,
    "base_rush_capped": 132.320364,
+   "big_play_rate": 3.97,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.12,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Baylor Bears"
    ]
@@ -502,6 +522,11 @@
    "capped_ypc": 5.0498,
    "allowed_big_play_share": 0.228,
    "base_rush_capped": 137.769117,
+   "big_play_rate": 4.21,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 2.73,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Oklahoma State Cowboys"
    ]
@@ -560,6 +585,11 @@
    "capped_ypc": 5.2241,
    "allowed_big_play_share": 0.2115,
    "base_rush_capped": 195.143815,
+   "big_play_rate": 6.35,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 1.45,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Texas Tech Red Raiders"
    ]
@@ -618,6 +648,11 @@
    "capped_ypc": 4.6029,
    "allowed_big_play_share": 0.332,
    "base_rush_capped": 250.861085,
+   "big_play_rate": 4.84,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 4.25,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "West Virginia Mountaineers"
    ]
@@ -676,6 +711,11 @@
    "capped_ypc": 4.977,
    "allowed_big_play_share": 0.3544,
    "base_rush_capped": 219.073549,
+   "big_play_rate": 3.93,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 6.22,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Kansas Jayhawks"
    ]
@@ -734,6 +774,11 @@
    "capped_ypc": 3.9522,
    "allowed_big_play_share": 0.3421,
    "base_rush_capped": 163.488876,
+   "big_play_rate": 2.87,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 6.06,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Washington State Cougars"
    ]
@@ -792,6 +837,11 @@
    "capped_ypc": 4.9664,
    "allowed_big_play_share": 0.3077,
    "base_rush_capped": 168.802493,
+   "big_play_rate": 5.04,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 4.62,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Colorado State Rams"
    ]
@@ -850,6 +900,11 @@
    "capped_ypc": 5.0145,
    "allowed_big_play_share": 0.2625,
    "base_rush_capped": 227.557114,
+   "big_play_rate": 5.2,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 3.22,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Texas State Bobcats"
    ]
@@ -908,6 +963,11 @@
    "capped_ypc": 4.2355,
    "allowed_big_play_share": 0.091,
    "base_rush_capped": 95.964002,
+   "big_play_rate": 4.25,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 0.94,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Fresno State Bulldogs"
    ]
@@ -966,6 +1026,11 @@
    "capped_ypc": 4.2825,
    "allowed_big_play_share": 0.1346,
    "base_rush_capped": 81.313781,
+   "big_play_rate": 1.79,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 2.06,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Hawaii Rainbow Warriors"
    ]
@@ -1024,6 +1089,11 @@
    "capped_ypc": 4.4642,
    "allowed_big_play_share": 0.2587,
    "base_rush_capped": 178.411559,
+   "big_play_rate": 2.05,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 4.36,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "North Dakota State Bison"
    ]
@@ -1082,6 +1152,11 @@
    "capped_ypc": 4.8858,
    "allowed_big_play_share": 0.2264,
    "base_rush_capped": 236.84937,
+   "big_play_rate": 3.81,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 4.83,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Central Michigan Chippewas"
    ]
@@ -1140,6 +1215,11 @@
    "capped_ypc": 3.7773,
    "allowed_big_play_share": 0.1582,
    "base_rush_capped": 103.751552,
+   "big_play_rate": 3.78,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.58,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Sacramento State Hornets"
    ]
@@ -1198,6 +1278,11 @@
    "capped_ypc": 4.2452,
    "allowed_big_play_share": 0.3311,
    "base_rush_capped": 105.758934,
+   "big_play_rate": 1.92,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.43,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "San Diego State Aztecs"
    ]
@@ -1256,6 +1341,11 @@
    "capped_ypc": 4.5043,
    "allowed_big_play_share": 0.095,
    "base_rush_capped": 158.936818,
+   "big_play_rate": 3.48,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 0.92,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Utah State Aggies"
    ]
@@ -1314,6 +1404,11 @@
    "capped_ypc": 3.7926,
    "allowed_big_play_share": 0.2035,
    "base_rush_capped": 95.729297,
+   "big_play_rate": 2.77,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 4.22,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Charlotte 49ers"
    ]
@@ -1372,6 +1467,11 @@
    "capped_ypc": 4.3754,
    "allowed_big_play_share": 0.1839,
    "base_rush_capped": 187.288154,
+   "big_play_rate": 2.81,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.95,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "East Carolina Pirates"
    ]
@@ -1430,6 +1530,11 @@
    "capped_ypc": 4.4275,
    "allowed_big_play_share": 0.33,
    "base_rush_capped": 148.444977,
+   "big_play_rate": 3.53,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 5.37,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "South Florida Bulls"
    ]
@@ -1488,6 +1593,11 @@
    "capped_ypc": 5.2935,
    "allowed_big_play_share": 0.2107,
    "base_rush_capped": 160.43106,
+   "big_play_rate": 3.87,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.6,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Memphis Tigers"
    ]
@@ -1546,6 +1656,11 @@
    "capped_ypc": 4.5727,
    "allowed_big_play_share": 0.2098,
    "base_rush_capped": 232.738658,
+   "big_play_rate": 5.81,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 3.26,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Rice Owls"
    ]
@@ -1604,6 +1719,11 @@
    "capped_ypc": 4.4147,
    "allowed_big_play_share": 0.3065,
    "base_rush_capped": 121.337564,
+   "big_play_rate": 5.04,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 4.74,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Tulane Green Wave"
    ]
@@ -1662,6 +1782,11 @@
    "capped_ypc": 4.1545,
    "allowed_big_play_share": 0.1419,
    "base_rush_capped": 95.413435,
+   "big_play_rate": 2.27,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.23,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Delaware Blue Hens"
    ]
@@ -1720,6 +1845,11 @@
    "capped_ypc": 4.1081,
    "allowed_big_play_share": 0.2567,
    "base_rush_capped": 126.140031,
+   "big_play_rate": 2.7,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 6.5,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Florida International Panthers"
    ]
@@ -1778,6 +1908,11 @@
    "capped_ypc": 5.2787,
    "allowed_big_play_share": 0.2531,
    "base_rush_capped": 236.11926,
+   "big_play_rate": 2.3,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 6.13,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Liberty Flames"
    ]
@@ -1836,6 +1971,11 @@
    "capped_ypc": 4.8839,
    "allowed_big_play_share": 0.2383,
    "base_rush_capped": 108.348379,
+   "big_play_rate": 3.12,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 5.43,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Middle Tennessee Blue Raiders"
    ]
@@ -1894,6 +2034,11 @@
    "capped_ypc": 5.0924,
    "allowed_big_play_share": 0.366,
    "base_rush_capped": 204.316776,
+   "big_play_rate": 4.46,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 5.25,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Boise State Broncos"
    ]
@@ -1952,6 +2097,11 @@
    "capped_ypc": 4.973,
    "allowed_big_play_share": 0.4112,
    "base_rush_capped": 85.576747,
+   "big_play_rate": 4.5,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 6.19,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Oregon State Beavers"
    ]
@@ -2010,6 +2160,11 @@
    "capped_ypc": 5.1093,
    "allowed_big_play_share": 0.1423,
    "base_rush_capped": 129.871971,
+   "big_play_rate": 4.45,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 3.25,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "UConn Huskies"
    ]
@@ -2068,6 +2223,11 @@
    "capped_ypc": 4.6991,
    "allowed_big_play_share": 0.1272,
    "base_rush_capped": 162.387671,
+   "big_play_rate": 4.56,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 1.8,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "James Madison Dukes"
    ]
@@ -2126,6 +2286,11 @@
    "capped_ypc": 4.8924,
    "allowed_big_play_share": 0.191,
    "base_rush_capped": 166.958061,
+   "big_play_rate": 3.47,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.63,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Georgia State Panthers"
    ]
@@ -2184,6 +2349,11 @@
    "capped_ypc": 4.2545,
    "allowed_big_play_share": 0.2522,
    "base_rush_capped": 130.580424,
+   "big_play_rate": 2.27,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 6.01,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Georgia Southern Eagles"
    ]
@@ -2242,6 +2412,11 @@
    "capped_ypc": 4.8681,
    "allowed_big_play_share": 0.1722,
    "base_rush_capped": 185.841266,
+   "big_play_rate": 4.76,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 3.6,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Marshall Thundering Herd"
    ]
@@ -2300,6 +2475,11 @@
    "capped_ypc": 4.1284,
    "allowed_big_play_share": 0.2842,
    "base_rush_capped": 124.155239,
+   "big_play_rate": 0.92,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 5.4,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Appalachian State Mountaineers"
    ]
@@ -2358,6 +2538,11 @@
    "capped_ypc": 4.2302,
    "allowed_big_play_share": 0.2936,
    "base_rush_capped": 124.004264,
+   "big_play_rate": 1.51,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 5.45,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "UL Monroe Warhawks"
    ]
@@ -2416,6 +2601,11 @@
    "capped_ypc": 4.7753,
    "allowed_big_play_share": 0.3321,
    "base_rush_capped": 235.324245,
+   "big_play_rate": 4.11,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 6.45,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Louisiana Ragin Cajuns"
    ]
@@ -2474,6 +2664,11 @@
    "capped_ypc": 4.3333,
    "allowed_big_play_share": 0.2657,
    "base_rush_capped": 158.963198,
+   "big_play_rate": 2.11,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 5.32,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Coastal Carolina Chanticleers"
    ]
@@ -2532,6 +2727,11 @@
    "capped_ypc": 4.4711,
    "allowed_big_play_share": 0.2656,
    "base_rush_capped": 135.650476,
+   "big_play_rate": 3.56,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 4.64,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Arkansas State Red Wolves"
    ]
@@ -2590,6 +2790,11 @@
    "capped_ypc": 3.8939,
    "allowed_big_play_share": 0.2856,
    "base_rush_capped": 187.50245,
+   "big_play_rate": 3.03,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 4.01,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Louisiana Tech Bulldogs"
    ]
@@ -2648,6 +2853,11 @@
    "capped_ypc": 4.8383,
    "allowed_big_play_share": 0.3212,
    "base_rush_capped": 90.371214,
+   "big_play_rate": 4.26,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 4.91,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Southern Mississippi Golden Eagles"
    ]
@@ -2706,6 +2916,11 @@
    "capped_ypc": 4.8312,
    "allowed_big_play_share": 0.2155,
    "base_rush_capped": 182.919655,
+   "big_play_rate": 5.0,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 5.04,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "South Alabama Jaguars"
    ]
@@ -2764,6 +2979,11 @@
    "capped_ypc": 4.68,
    "allowed_big_play_share": 0.4002,
    "base_rush_capped": 174.735436,
+   "big_play_rate": 4.33,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 7.66,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Troy Trojans"
    ]
@@ -2822,6 +3042,11 @@
    "capped_ypc": 4.7361,
    "allowed_big_play_share": 0.2388,
    "base_rush_capped": 193.811111,
+   "big_play_rate": 2.43,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.9,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Toledo Rockets"
    ]
@@ -2880,6 +3105,11 @@
    "capped_ypc": 4.6143,
    "allowed_big_play_share": 0.2569,
    "base_rush_capped": 105.413832,
+   "big_play_rate": 3.59,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.36,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "UMass Minutemen"
    ]
@@ -2938,6 +3168,11 @@
    "capped_ypc": 4.8,
    "allowed_big_play_share": 0.1421,
    "base_rush_capped": 185.647755,
+   "big_play_rate": 5.96,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 0.69,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Iowa State Cyclones"
    ]
@@ -2996,6 +3231,11 @@
    "capped_ypc": 5.3694,
    "allowed_big_play_share": 0.3477,
    "base_rush_capped": 179.710735,
+   "big_play_rate": 6.72,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 4.87,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Cincinnati Bearcats"
    ]
@@ -3054,6 +3294,11 @@
    "capped_ypc": 4.0661,
    "allowed_big_play_share": 0.2055,
    "base_rush_capped": 111.589325,
+   "big_play_rate": 2.33,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 2.65,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Colorado Buffaloes"
    ]
@@ -3112,6 +3357,11 @@
    "capped_ypc": 4.8464,
    "allowed_big_play_share": 0.1579,
    "base_rush_capped": 170.824926,
+   "big_play_rate": 2.73,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 0.64,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Houston Cougars"
    ]
@@ -3170,6 +3420,11 @@
    "capped_ypc": 5.2263,
    "allowed_big_play_share": 0.1558,
    "base_rush_capped": 192.765194,
+   "big_play_rate": 4.53,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 3.27,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Temple Owls"
    ]
@@ -3228,6 +3483,11 @@
    "capped_ypc": 4.3099,
    "allowed_big_play_share": 0.176,
    "base_rush_capped": 167.868149,
+   "big_play_rate": 3.52,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 2.78,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "UAB Blazers"
    ]
@@ -3286,6 +3546,11 @@
    "capped_ypc": 4.5061,
    "allowed_big_play_share": 0.4948,
    "base_rush_capped": 153.377009,
+   "big_play_rate": 2.86,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 7.35,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Tulsa Golden Hurricane"
    ]
@@ -3344,6 +3609,11 @@
    "capped_ypc": 4.2151,
    "allowed_big_play_share": 0.2413,
    "base_rush_capped": 140.877753,
+   "big_play_rate": 3.23,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 1.66,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Florida Atlantic Owls"
    ]
@@ -3402,6 +3672,11 @@
    "capped_ypc": 4.7712,
    "allowed_big_play_share": 0.3367,
    "base_rush_capped": 171.267851,
+   "big_play_rate": 4.06,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 4.16,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "UTSA Roadrunners"
    ]
@@ -3460,6 +3735,11 @@
    "capped_ypc": 4.6805,
    "allowed_big_play_share": 0.3256,
    "base_rush_capped": 158.566819,
+   "big_play_rate": 4.14,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.83,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "North Texas Mean Green"
    ]
@@ -3518,6 +3798,11 @@
    "capped_ypc": 4.5606,
    "allowed_big_play_share": 0.1282,
    "base_rush_capped": 177.465422,
+   "big_play_rate": 4.55,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 3.81,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Western Kentucky Hilltoppers"
    ]
@@ -3576,6 +3861,11 @@
    "capped_ypc": 5.126,
    "allowed_big_play_share": 0.363,
    "base_rush_capped": 207.057004,
+   "big_play_rate": 3.44,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 5.83,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Jacksonville State Gamecocks"
    ]
@@ -3634,6 +3924,11 @@
    "capped_ypc": 4.2064,
    "allowed_big_play_share": 0.2366,
    "base_rush_capped": 98.085554,
+   "big_play_rate": 3.21,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 4.18,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Missouri State Bears"
    ]
@@ -3692,6 +3987,11 @@
    "capped_ypc": 4.7265,
    "allowed_big_play_share": 0.2671,
    "base_rush_capped": 157.484707,
+   "big_play_rate": 4.93,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 5.75,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "New Mexico State Aggies"
    ]
@@ -3750,6 +4050,11 @@
    "capped_ypc": 4.4837,
    "allowed_big_play_share": 0.3073,
    "base_rush_capped": 161.21417,
+   "big_play_rate": 3.66,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 4.38,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Virginia Tech Hokies"
    ]
@@ -3808,6 +4113,11 @@
    "capped_ypc": 3.9631,
    "allowed_big_play_share": 0.3774,
    "base_rush_capped": 98.624078,
+   "big_play_rate": 2.3,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 6.04,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Stanford Cardinal"
    ]
@@ -3866,6 +4176,11 @@
    "capped_ypc": 4.3297,
    "allowed_big_play_share": 0.3452,
    "base_rush_capped": 164.503059,
+   "big_play_rate": 2.87,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 5.54,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Virginia Cavaliers"
    ]
@@ -3924,6 +4239,11 @@
    "capped_ypc": 3.3812,
    "allowed_big_play_share": 0.2916,
    "base_rush_capped": 97.407893,
+   "big_play_rate": 1.98,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 4.69,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "California Golden Bears"
    ]
@@ -3982,6 +4302,11 @@
    "capped_ypc": 4.6312,
    "allowed_big_play_share": 0.3507,
    "base_rush_capped": 179.427712,
+   "big_play_rate": 3.19,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 4.1,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Pittsburgh Panthers"
    ]
@@ -4040,6 +4365,11 @@
    "capped_ypc": 4.7687,
    "allowed_big_play_share": 0.1514,
    "base_rush_capped": 118.914605,
+   "big_play_rate": 2.85,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 1.35,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Florida State Seminoles"
    ]
@@ -4098,6 +4428,11 @@
    "capped_ypc": 4.388,
    "allowed_big_play_share": 0.2826,
    "base_rush_capped": 208.793059,
+   "big_play_rate": 4.8,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 5.35,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Clemson Tigers"
    ]
@@ -4156,6 +4491,11 @@
    "capped_ypc": 4.806,
    "allowed_big_play_share": 0.0282,
    "base_rush_capped": 116.608421,
+   "big_play_rate": 6.47,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 0.9,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Georgia Tech Yellow Jackets"
    ]
@@ -4214,6 +4554,11 @@
    "capped_ypc": 4.3242,
    "allowed_big_play_share": 0.1956,
    "base_rush_capped": 148.309752,
+   "big_play_rate": 1.37,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.17,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "North Carolina Tar Heels"
    ]
@@ -4272,6 +4617,11 @@
    "capped_ypc": 5.5748,
    "allowed_big_play_share": 0.1831,
    "base_rush_capped": 184.459381,
+   "big_play_rate": 8.66,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 2.63,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Louisville Cardinals"
    ]
@@ -4330,6 +4680,11 @@
    "capped_ypc": 4.6287,
    "allowed_big_play_share": 0.2382,
    "base_rush_capped": 201.634301,
+   "big_play_rate": 3.58,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 2.82,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Notre Dame Fighting Irish"
    ]
@@ -4388,6 +4743,11 @@
    "capped_ypc": 5.3922,
    "allowed_big_play_share": 0.0572,
    "base_rush_capped": 98.016985,
+   "big_play_rate": 3.53,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 0.71,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Boston College Eagles"
    ]
@@ -4446,6 +4806,11 @@
    "capped_ypc": 5.0,
    "allowed_big_play_share": 0.2079,
    "base_rush_capped": 156.293225,
+   "big_play_rate": 3.85,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.18,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Miami Hurricanes"
    ]
@@ -4504,6 +4869,11 @@
    "capped_ypc": 4.7299,
    "allowed_big_play_share": 0.1068,
    "base_rush_capped": 65.610974,
+   "big_play_rate": 5.11,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 1.86,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Duke Blue Devils"
    ]
@@ -4562,6 +4932,11 @@
    "capped_ypc": 4.6679,
    "allowed_big_play_share": 0.0981,
    "base_rush_capped": 112.773058,
+   "big_play_rate": 5.17,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 1.3,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "SMU Mustangs"
    ]
@@ -4620,6 +4995,11 @@
    "capped_ypc": 5.0485,
    "allowed_big_play_share": 0.3299,
    "base_rush_capped": 132.416416,
+   "big_play_rate": 4.1,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 4.74,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Wake Forest Demon Deacons"
    ]
@@ -4678,6 +5058,11 @@
    "capped_ypc": 3.7769,
    "allowed_big_play_share": 0.3112,
    "base_rush_capped": 100.331462,
+   "big_play_rate": 2.39,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 4.16,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "NC State Wolfpack"
    ]
@@ -4736,6 +5121,11 @@
    "capped_ypc": 3.9767,
    "allowed_big_play_share": 0.29,
    "base_rush_capped": 173.032752,
+   "big_play_rate": 3.0,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 6.53,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Syracuse Orange"
    ]
@@ -4794,6 +5184,11 @@
    "capped_ypc": 4.0669,
    "allowed_big_play_share": 0.2958,
    "base_rush_capped": 97.026827,
+   "big_play_rate": 3.35,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.13,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "UCF Knights"
    ]
@@ -4852,6 +5247,11 @@
    "capped_ypc": 4.6849,
    "allowed_big_play_share": 0.2084,
    "base_rush_capped": 118.06688,
+   "big_play_rate": 2.1,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 2.5,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Arizona State Sun Devils"
    ]
@@ -4910,6 +5310,11 @@
    "capped_ypc": 4.5939,
    "allowed_big_play_share": 0.1717,
    "base_rush_capped": 81.267619,
+   "big_play_rate": 2.18,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 1.7,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Arizona Wildcats"
    ]
@@ -4968,6 +5373,11 @@
    "capped_ypc": 5.1691,
    "allowed_big_play_share": 0.2556,
    "base_rush_capped": 184.174075,
+   "big_play_rate": 5.51,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 2.96,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Utah Utes"
    ]
@@ -5026,6 +5436,11 @@
    "capped_ypc": 4.8976,
    "allowed_big_play_share": 0.1702,
    "base_rush_capped": 158.036823,
+   "big_play_rate": 5.51,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 2.66,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Indiana Hoosiers"
    ]
@@ -5084,6 +5499,11 @@
    "capped_ypc": 4.4982,
    "allowed_big_play_share": 0.1297,
    "base_rush_capped": 90.106036,
+   "big_play_rate": 2.56,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 1.69,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "USC Trojans"
    ]
@@ -5142,6 +5562,11 @@
    "capped_ypc": 4.5812,
    "allowed_big_play_share": 0.3578,
    "base_rush_capped": 161.139936,
+   "big_play_rate": 1.95,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 5.71,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Ohio State Buckeyes"
    ]
@@ -5200,6 +5625,11 @@
    "capped_ypc": 5.1241,
    "allowed_big_play_share": 0.1787,
    "base_rush_capped": 138.525742,
+   "big_play_rate": 5.32,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 2.8,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Northwestern Wildcats"
    ]
@@ -5258,6 +5688,11 @@
    "capped_ypc": 4.0135,
    "allowed_big_play_share": 0.1434,
    "base_rush_capped": 113.032307,
+   "big_play_rate": 3.59,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 1.85,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Oregon Ducks"
    ]
@@ -5316,6 +5751,11 @@
    "capped_ypc": 4.085,
    "allowed_big_play_share": 0.2949,
    "base_rush_capped": 114.227123,
+   "big_play_rate": 1.36,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.33,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Michigan Wolverines"
    ]
@@ -5374,6 +5814,11 @@
    "capped_ypc": 4.0358,
    "allowed_big_play_share": 0.1628,
    "base_rush_capped": 129.561016,
+   "big_play_rate": 2.61,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 1.76,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Penn State Nittany Lions"
    ]
@@ -5432,6 +5877,11 @@
    "capped_ypc": 3.4417,
    "allowed_big_play_share": 0.3083,
    "base_rush_capped": 96.928285,
+   "big_play_rate": 2.91,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 4.56,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Minnesota Golden Gophers"
    ]
@@ -5490,6 +5940,11 @@
    "capped_ypc": 4.2612,
    "allowed_big_play_share": 0.0994,
    "base_rush_capped": 106.525546,
+   "big_play_rate": 3.67,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 1.23,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Rutgers Scarlet Knights"
    ]
@@ -5548,6 +6003,11 @@
    "capped_ypc": 5.1673,
    "allowed_big_play_share": 0.2694,
    "base_rush_capped": 200.696548,
+   "big_play_rate": 4.56,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 5.27,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Nebraska Cornhuskers"
    ]
@@ -5606,6 +6066,11 @@
    "capped_ypc": 3.934,
    "allowed_big_play_share": 0.2911,
    "base_rush_capped": 128.372447,
+   "big_play_rate": 1.39,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 4.19,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Michigan State Spartans"
    ]
@@ -5664,6 +6129,11 @@
    "capped_ypc": 4.2842,
    "allowed_big_play_share": 0.1384,
    "base_rush_capped": 95.834756,
+   "big_play_rate": 3.68,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 1.82,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Washington Huskies"
    ]
@@ -5722,6 +6192,11 @@
    "capped_ypc": 3.7019,
    "allowed_big_play_share": 0.0571,
    "base_rush_capped": 74.558654,
+   "big_play_rate": 1.92,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 0.95,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Maryland Terrapins"
    ]
@@ -5780,6 +6255,11 @@
    "capped_ypc": 4.1909,
    "allowed_big_play_share": 0.2944,
    "base_rush_capped": 150.592072,
+   "big_play_rate": 1.66,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.21,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Wisconsin Badgers"
    ]
@@ -5838,6 +6318,11 @@
    "capped_ypc": 5.2335,
    "allowed_big_play_share": 0.1516,
    "base_rush_capped": 202.691305,
+   "big_play_rate": 4.79,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 2.57,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "UCLA Bruins"
    ]
@@ -5896,6 +6381,11 @@
    "capped_ypc": 4.6835,
    "allowed_big_play_share": 0.072,
    "base_rush_capped": 133.666557,
+   "big_play_rate": 3.8,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 2.03,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Illinois Fighting Illini"
    ]
@@ -5954,6 +6444,11 @@
    "capped_ypc": 4.5612,
    "allowed_big_play_share": 0.3407,
    "base_rush_capped": 160.912964,
+   "big_play_rate": 3.8,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 4.54,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Iowa Hawkeyes"
    ]
@@ -6012,6 +6507,11 @@
    "capped_ypc": 4.0213,
    "allowed_big_play_share": 0.0669,
    "base_rush_capped": 74.244275,
+   "big_play_rate": 3.83,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 0.72,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Purdue Boilermakers"
    ]
@@ -6070,6 +6570,11 @@
    "capped_ypc": 3.5989,
    "allowed_big_play_share": 0.1266,
    "base_rush_capped": 85.504667,
+   "big_play_rate": 1.69,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.28,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Sam Houston State Bearkats"
    ]
@@ -6128,6 +6633,11 @@
    "capped_ypc": 4.4093,
    "allowed_big_play_share": 0.2759,
    "base_rush_capped": 142.696928,
+   "big_play_rate": 1.4,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 5.55,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Kennesaw State Owls"
    ]
@@ -6186,6 +6696,11 @@
    "capped_ypc": 4.8151,
    "allowed_big_play_share": 0.2613,
    "base_rush_capped": 130.244146,
+   "big_play_rate": 4.2,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 5.72,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Miami (OH) RedHawks"
    ]
@@ -6244,6 +6759,11 @@
    "capped_ypc": 5.203,
    "allowed_big_play_share": 0.2343,
    "base_rush_capped": 110.444127,
+   "big_play_rate": 3.38,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 2.73,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Ohio Bobcats"
    ]
@@ -6302,6 +6822,11 @@
    "capped_ypc": 4.3592,
    "allowed_big_play_share": 0.1613,
    "base_rush_capped": 155.996807,
+   "big_play_rate": 2.86,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 2.85,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Ball State Cardinals"
    ]
@@ -6360,6 +6885,11 @@
    "capped_ypc": 3.9606,
    "allowed_big_play_share": 0.3057,
    "base_rush_capped": 163.293482,
+   "big_play_rate": 3.15,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 4.99,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Buffalo Bulls"
    ]
@@ -6418,6 +6948,11 @@
    "capped_ypc": 3.9873,
    "allowed_big_play_share": 0.1958,
    "base_rush_capped": 137.657413,
+   "big_play_rate": 2.54,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.33,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Bowling Green Falcons"
    ]
@@ -6476,6 +7011,11 @@
    "capped_ypc": 3.5874,
    "allowed_big_play_share": 0.3664,
    "base_rush_capped": 129.875489,
+   "big_play_rate": 2.24,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 5.97,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Kent State Golden Flashes"
    ]
@@ -6534,6 +7074,11 @@
    "capped_ypc": 4.9083,
    "allowed_big_play_share": 0.0737,
    "base_rush_capped": 129.343529,
+   "big_play_rate": 2.08,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 2.03,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Akron Zips"
    ]
@@ -6592,6 +7137,11 @@
    "capped_ypc": 4.6584,
    "allowed_big_play_share": 0.3801,
    "base_rush_capped": 202.328972,
+   "big_play_rate": 3.56,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 6.4,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Western Michigan Broncos"
    ]
@@ -6650,6 +7200,11 @@
    "capped_ypc": 5.0021,
    "allowed_big_play_share": 0.1594,
    "base_rush_capped": 330.289619,
+   "big_play_rate": 3.11,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 2.58,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Air Force Falcons"
    ]
@@ -6708,6 +7263,11 @@
    "capped_ypc": 3.7654,
    "allowed_big_play_share": 0.2746,
    "base_rush_capped": 78.550523,
+   "big_play_rate": 1.54,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 4.03,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "San Jose State Spartans"
    ]
@@ -6766,6 +7326,11 @@
    "capped_ypc": 4.7888,
    "allowed_big_play_share": 0.2754,
    "base_rush_capped": 223.442617,
+   "big_play_rate": 5.28,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 6.39,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "New Mexico Lobos"
    ]
@@ -6824,6 +7389,11 @@
    "capped_ypc": 4.9902,
    "allowed_big_play_share": 0.2338,
    "base_rush_capped": 101.063383,
+   "big_play_rate": 4.23,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 2.73,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "UNLV Rebels"
    ]
@@ -6882,6 +7452,11 @@
    "capped_ypc": 5.3073,
    "allowed_big_play_share": 0.1536,
    "base_rush_capped": 140.288191,
+   "big_play_rate": 3.9,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.01,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Northern Illinois Huskies"
    ]
@@ -6940,6 +7515,11 @@
    "capped_ypc": 4.2908,
    "allowed_big_play_share": 0.3165,
    "base_rush_capped": 155.06275,
+   "big_play_rate": 3.19,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 6.7,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Nevada Wolf Pack"
    ]
@@ -6998,6 +7578,11 @@
    "capped_ypc": 4.4894,
    "allowed_big_play_share": 0.164,
    "base_rush_capped": 166.226524,
+   "big_play_rate": 5.11,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 5.08,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "UTEP Miners"
    ]
@@ -7056,6 +7641,11 @@
    "capped_ypc": 5.5509,
    "allowed_big_play_share": 0.2734,
    "base_rush_capped": 214.028714,
+   "big_play_rate": 5.26,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 5.13,
+   "opp_rush_expl_tercile": "leaky",
    "oddsapi_names": [
     "Wyoming Cowboys"
    ]
@@ -7114,6 +7704,11 @@
    "capped_ypc": 4.7923,
    "allowed_big_play_share": 0.2263,
    "base_rush_capped": 157.674038,
+   "big_play_rate": 3.87,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 2.79,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Mississippi State Bulldogs"
    ]
@@ -7172,6 +7767,11 @@
    "capped_ypc": 5.1042,
    "allowed_big_play_share": 0.1218,
    "base_rush_capped": 156.307973,
+   "big_play_rate": 6.25,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 2.35,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Auburn Tigers"
    ]
@@ -7230,6 +7830,11 @@
    "capped_ypc": 4.815,
    "allowed_big_play_share": 0.2181,
    "base_rush_capped": 151.179576,
+   "big_play_rate": 2.76,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 2.57,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Kentucky Wildcats"
    ]
@@ -7288,6 +7893,11 @@
    "capped_ypc": 4.2552,
    "allowed_big_play_share": 0.2193,
    "base_rush_capped": 131.559076,
+   "big_play_rate": 3.85,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 2.49,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Florida Gators"
    ]
@@ -7346,6 +7956,11 @@
    "capped_ypc": 5.4642,
    "allowed_big_play_share": 0.0908,
    "base_rush_capped": 134.206042,
+   "big_play_rate": 5.28,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": true,
+   "opp_allowed_rate_adj": 1.23,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Georgia Bulldogs"
    ]
@@ -7404,6 +8019,11 @@
    "capped_ypc": 4.0996,
    "allowed_big_play_share": 0.1557,
    "base_rush_capped": 99.529987,
+   "big_play_rate": 2.79,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 1.89,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Missouri Tigers"
    ]
@@ -7462,6 +8082,11 @@
    "capped_ypc": 3.8754,
    "allowed_big_play_share": 0.2696,
    "base_rush_capped": 142.989043,
+   "big_play_rate": 1.78,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.01,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Oklahoma Sooners"
    ]
@@ -7520,6 +8145,11 @@
    "capped_ypc": 4.9857,
    "allowed_big_play_share": 0.1997,
    "base_rush_capped": 137.885597,
+   "big_play_rate": 2.86,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 1.61,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Ole Miss Rebels"
    ]
@@ -7578,6 +8208,11 @@
    "capped_ypc": 4.349,
    "allowed_big_play_share": 0.1188,
    "base_rush_capped": 120.386649,
+   "big_play_rate": 1.34,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 1.15,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "LSU Tigers"
    ]
@@ -7636,6 +8271,11 @@
    "capped_ypc": 4.3559,
    "allowed_big_play_share": 0.2126,
    "base_rush_capped": 86.452474,
+   "big_play_rate": 2.71,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 1.75,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Texas Longhorns"
    ]
@@ -7694,6 +8334,11 @@
    "capped_ypc": 3.9573,
    "allowed_big_play_share": 0.2145,
    "base_rush_capped": 66.696158,
+   "big_play_rate": 1.28,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 2.37,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Vanderbilt Commodores"
    ]
@@ -7752,6 +8397,11 @@
    "capped_ypc": 5.0532,
    "allowed_big_play_share": 0.2182,
    "base_rush_capped": 153.538203,
+   "big_play_rate": 3.8,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.6,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Alabama Crimson Tide"
    ]
@@ -7810,6 +8460,11 @@
    "capped_ypc": 3.9917,
    "allowed_big_play_share": 0.2317,
    "base_rush_capped": 125.701042,
+   "big_play_rate": 2.89,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.81,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Arkansas Razorbacks"
    ]
@@ -7868,6 +8523,11 @@
    "capped_ypc": 4.8951,
    "allowed_big_play_share": 0.2428,
    "base_rush_capped": 181.001235,
+   "big_play_rate": 3.75,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 2.75,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "South Carolina Gamecocks"
    ]
@@ -7926,6 +8586,11 @@
    "capped_ypc": 4.4448,
    "allowed_big_play_share": 0.1949,
    "base_rush_capped": 156.999337,
+   "big_play_rate": 2.14,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 3.0,
+   "opp_rush_expl_tercile": "middle",
    "oddsapi_names": [
     "Texas A&M Aggies"
    ]
@@ -7984,6 +8649,11 @@
    "capped_ypc": 5.0453,
    "allowed_big_play_share": 0.1688,
    "base_rush_capped": 178.716148,
+   "big_play_rate": 4.21,
+   "big_play_rate_p75": 4.31,
+   "big_play_v2": false,
+   "opp_allowed_rate_adj": 2.47,
+   "opp_rush_expl_tercile": "stingy",
    "oddsapi_names": [
     "Tennessee Volunteers"
    ]
