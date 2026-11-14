@@ -1,0 +1,3 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+f9b805187f3809fdadddfa08dfa2a089,2026-11-14T23:08:00Z,Boise State Broncos,Oregon State Beavers,2026-11-14T23:07:45+00:00,,,,,,,,,-16.5,66.5,
+c113a0bd62980b8ec1ce85b27292f699,2026-11-14T23:20:00Z,Kentucky Wildcats,Florida Gators,2026-11-14T23:07:45+00:00,161.5,-113.0,-113.0,161.5,-113.0,-113.0,,,-2.5,52.5,
