@@ -1,0 +1,6 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+109bd435222562d833efa2a511f9b79e,2026-11-14T22:30:00Z,UCF Knights,Arizona State Sun Devils,2026-11-14T22:10:15+00:00,123.5,-113.0,-113.0,118.5,-113.0,-113.0,,,-3.5,45.5,
+aa1c9ee516cf122de53e75ffec017edd,2026-11-14T22:30:00Z,Michigan State Spartans,Washington Huskies,2026-11-14T22:10:15+00:00,116.5,-113.0,-113.0,98.5,-113.0,-113.0,,,2.5,43.5,
+558ce811ad052f49918a2855f3777baf,2026-11-14T23:00:00Z,Marshall Thundering Herd,Appalachian State Mountaineers,2026-11-14T22:10:15+00:00,177.5,-113.0,-113.0,122.5,-113.0,-113.0,,,-1.5,54.5,
+f9b805187f3809fdadddfa08dfa2a089,2026-11-14T23:00:00Z,Boise State Broncos,Oregon State Beavers,2026-11-14T22:10:15+00:00,,,,,,,,,-16.5,65.5,
+c113a0bd62980b8ec1ce85b27292f699,2026-11-14T23:15:00Z,Kentucky Wildcats,Florida Gators,2026-11-14T22:10:15+00:00,161.5,-113.0,-113.0,161.5,-113.0,-113.0,,,-2.5,52.5,
