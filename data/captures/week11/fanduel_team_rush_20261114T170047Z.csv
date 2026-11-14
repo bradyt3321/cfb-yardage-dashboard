@@ -1,0 +1,7 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+82eed9ad82fa12a1ace084358d3fd32d,2026-11-14T17:30:00Z,Clemson Tigers,Georgia Tech Yellow Jackets,2026-11-14T17:00:47+00:00,,,,,,,,,-15.5,48.5,
+1742500c43d25085db47873b82f15459,2026-11-14T17:30:00Z,Rutgers Scarlet Knights,Nebraska Cornhuskers,2026-11-14T17:00:47+00:00,141.5,-113.0,-113.0,169.5,-113.0,-113.0,,,14.5,51.5,
+fe42d22bafb7d5f406317697dff44ee6,2026-11-14T17:45:00Z,Vanderbilt Commodores,Alabama Crimson Tide,2026-11-14T17:00:47+00:00,80.5,-111.0,-115.0,164.5,-113.0,-113.0,,,14.5,47.5,
+72e1af72402c489444f89a8600abb23f,2026-11-14T18:00:00Z,Coastal Carolina Chanticleers,Arkansas State Red Wolves,2026-11-14T17:00:47+00:00,130.5,-113.0,-113.0,128.5,-113.0,-113.0,,,-1.5,52.5,
+01787a755109adbf19adf48ca4d60ddb,2026-11-14T18:00:00Z,Charlotte 49ers,East Carolina Pirates,2026-11-14T17:00:47+00:00,118.5,-113.0,-113.0,173.5,-113.0,-113.0,,,10.5,45.5,
+6f50a1eb0425d8adc1f4914bf27289d0,2026-11-14T18:00:00Z,Temple Owls,UAB Blazers,2026-11-14T17:00:47+00:00,166.5,-113.0,-113.0,160.5,-113.0,-113.0,,,-2.5,47.5,
