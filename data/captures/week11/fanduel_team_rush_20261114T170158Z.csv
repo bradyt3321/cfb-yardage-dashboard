@@ -1,0 +1,9 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+83b67813ba763c65142b4238e3c44270,2026-11-14T17:05:00Z,UConn Huskies,James Madison Dukes,2026-11-14T17:01:58+00:00,160.5,-113.0,-113.0,183.5,-113.0,-113.0,,,4.5,56.5,
+862cc541ca98da17b20a964513c18435,2026-11-14T17:05:00Z,Maryland Terrapins,Wisconsin Badgers,2026-11-14T17:01:58+00:00,74.5,-115.0,-111.0,127.5,-113.0,-113.0,,,8.5,40.5,
+b7d77aed1f8f75da7679a059e627dfee,2026-11-14T17:05:00Z,SMU Mustangs,Wake Forest Demon Deacons,2026-11-14T17:01:58+00:00,133.5,-113.0,-113.0,143.5,-113.0,-113.0,,,-2.5,60.5,
+462e4e8a99f44d5c64f36987e966cd13,2026-11-14T17:10:00Z,Ohio State Buckeyes,Northwestern Wildcats,2026-11-14T17:01:58+00:00,139.5,-113.0,-113.0,101.5,-113.0,-113.0,,,-14.5,45.5,
+a195a61a5f2a3c5c0ed7ba7b313572e5,2026-11-14T17:15:00Z,Miami Hurricanes,Duke Blue Devils,2026-11-14T17:01:58+00:00,155.5,-113.0,-113.0,120.5,-113.0,-113.0,,,-13.5,55.5,
+82eed9ad82fa12a1ace084358d3fd32d,2026-11-14T17:30:00Z,Clemson Tigers,Georgia Tech Yellow Jackets,2026-11-14T17:01:58+00:00,,,,,,,,,-15.5,48.5,
+1742500c43d25085db47873b82f15459,2026-11-14T17:30:00Z,Rutgers Scarlet Knights,Nebraska Cornhuskers,2026-11-14T17:01:58+00:00,141.5,-113.0,-113.0,169.5,-113.0,-113.0,,,14.5,51.5,
+fe42d22bafb7d5f406317697dff44ee6,2026-11-14T17:45:00Z,Vanderbilt Commodores,Alabama Crimson Tide,2026-11-14T17:01:58+00:00,80.5,-111.0,-115.0,164.5,-113.0,-113.0,,,14.5,47.5,
