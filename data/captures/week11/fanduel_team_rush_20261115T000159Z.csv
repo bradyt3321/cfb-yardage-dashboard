@@ -1,0 +1,11 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+d9bfb4f5e7ba909febe2a83fc04d4f15,2026-11-15T00:05:00Z,Air Force Falcons,San Jose State Spartans,2026-11-15T00:01:59+00:00,340.5,-113,-113,101.5,-113,-113,,,-14.5,50.5,
+5b6989e8ecca343c4de3e7d285b70aa3,2026-11-15T00:05:00Z,BYU Cougars,Baylor Bears,2026-11-15T00:01:59+00:00,153.5,-113,-113,96.5,-111,-115,,,-8.5,49.5,
+3b677ea4fddccce26e4468faf7079768,2026-11-15T00:05:00Z,North Carolina Tar Heels,Louisville Cardinals,2026-11-15T00:01:59+00:00,124.5,-113,-113,175.5,-113,-113,,,3.5,57.5,
+c83b81cc8d2110c8e4a39eefea4bdc72,2026-11-15T00:05:00Z,South Alabama Jaguars,Troy Trojans,2026-11-15T00:01:59+00:00,198.5,-113,-113,184.5,-113,-113,,,-3.5,55.5,
+018349e41d033e3b1fdbc14ce9b09325,2026-11-15T00:15:00Z,Tulsa Golden Hurricane,Florida Atlantic Owls,2026-11-15T00:01:59+00:00,228.5,-113,-113,160.5,-113,-113,,,-6.5,73.5,
+13916d6f26b193abfc3367d80f27e64c,2026-11-15T00:30:00Z,Iowa Hawkeyes,Purdue Boilermakers,2026-11-15T00:01:59+00:00,193.5,-113,-113,71.5,-111,-115,,,-18.5,47.5,
+5f45291a1a5e01525b2e3aebe791c436,2026-11-15T00:30:00Z,LSU Tigers,Texas Longhorns,2026-11-15T00:01:59+00:00,113.5,-113,-115,103.5,-113,-113,,,-4.5,47.5,
+8982b0a852d112b25310aa03f0f104b6,2026-11-15T00:30:00Z,New Mexico Lobos,UNLV Rebels,2026-11-15T00:01:59+00:00,237.5,-113,-113,107.5,-113,-113,,,-17.5,46.5,
+77380a347bae20671e1f8cec27ce658b,2026-11-15T00:30:00Z,Virginia Tech Hokies,Stanford Cardinal,2026-11-15T00:01:59+00:00,165.5,-113,-113,83.5,-113,-113,,,-17.5,57.5,
+d0cebc10547e648dd7988b83f58081cf,2026-11-15T00:45:00Z,Arkansas Razorbacks,South Carolina Gamecocks,2026-11-15T00:01:59+00:00,117.5,-113,-113,179.5,-113,-113,,,7.5,51.5,
