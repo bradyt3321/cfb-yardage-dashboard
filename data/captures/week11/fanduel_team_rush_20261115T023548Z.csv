@@ -1,0 +1,3 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+ece9b1bb56a95381f1c485d22bd36dd8,2026-11-15T02:36:00Z,San Diego State Aztecs,Utah State Aggies,2026-11-15T02:35:48+00:00,147.5,-113,-113,138.5,-113,-113,,,2.5,43.5,
+21c985dda7b6b34cc9820a76dfad6172,2026-11-15T03:00:00Z,UTEP Miners,Wyoming Cowboys,2026-11-15T02:35:48+00:00,148.5,-113,-113,171.5,-113,-113,,,7.5,41.5,
