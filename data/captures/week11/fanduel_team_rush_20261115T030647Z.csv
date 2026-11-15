@@ -1,0 +1,4 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+21c985dda7b6b34cc9820a76dfad6172,2026-11-15T03:10:00Z,UTEP Miners,Wyoming Cowboys,2026-11-15T03:06:47+00:00,148.5,-113,-113,171.5,-113,-113,,,7.5,41.5,
+7b3c2958dadc616a19ce7b9b1dd2a7e4,2026-11-15T03:30:00Z,Arizona Wildcats,Utah Utes,2026-11-15T03:06:47+00:00,98.5,-113,-113,163.5,-113,-113,,,1.5,55.5,
+c3c46d55350226dd82d83ecf0b52891a,2026-11-15T03:30:00Z,Washington State Cougars,Colorado State Rams,2026-11-15T03:06:47+00:00,190.5,-113,-113,139.5,-113,-113,,,-7.5,63.5,
