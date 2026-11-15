@@ -1,0 +1,6 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+13916d6f26b193abfc3367d80f27e64c,2026-11-15T00:30:00Z,Iowa Hawkeyes,Purdue Boilermakers,2026-11-15T00:15:19+00:00,193.5,-113,-113,71.5,-113,-113,,,-18.5,47.5,
+5f45291a1a5e01525b2e3aebe791c436,2026-11-15T00:30:00Z,LSU Tigers,Texas Longhorns,2026-11-15T00:15:19+00:00,118.5,-113,-113,107.5,-113,-113,,,-4.5,47.5,
+8982b0a852d112b25310aa03f0f104b6,2026-11-15T00:30:00Z,New Mexico Lobos,UNLV Rebels,2026-11-15T00:15:19+00:00,239.5,-113,-113,103.5,-113,-113,,,-18.5,46.5,
+77380a347bae20671e1f8cec27ce658b,2026-11-15T00:30:00Z,Virginia Tech Hokies,Stanford Cardinal,2026-11-15T00:15:19+00:00,165.5,-113,-113,83.5,-113,-113,,,-17.5,57.5,
+d0cebc10547e648dd7988b83f58081cf,2026-11-15T00:45:00Z,Arkansas Razorbacks,South Carolina Gamecocks,2026-11-15T00:15:19+00:00,117.5,-113,-113,179.5,-113,-113,,,7.5,51.5,
