@@ -1,0 +1,4 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+ee91eb14cc4d725be5df58f3285bdaa6,2026-11-15T02:00:00Z,UTSA Roadrunners,North Texas Mean Green,2026-11-15T01:30:37+00:00,,,,,,,,,2.5,75.5,
+320a213c475110f032710dcd06c94e8e,2026-11-15T02:30:00Z,Oklahoma State Cowboys,Texas Tech Red Raiders,2026-11-15T01:30:37+00:00,152.5,-113.0,-113.0,207.5,-113.0,-113.0,,,-3.5,74.5,
+ece9b1bb56a95381f1c485d22bd36dd8,2026-11-15T02:30:00Z,San Diego State Aztecs,Utah State Aggies,2026-11-15T01:30:37+00:00,152.5,-113.0,-113.0,135.5,-113.0,-113.0,,,2.5,43.5,
