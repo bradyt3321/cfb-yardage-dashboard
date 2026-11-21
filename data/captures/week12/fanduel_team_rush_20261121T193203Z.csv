@@ -1,0 +1,5 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+725c6205de38f91b507a880c139eda54,2026-11-21T19:35:00Z,Illinois Fighting Illini,Iowa Hawkeyes,2026-11-21T19:32:03+00:00,105.5,-113,-113,156.5,-113,-113,,,7.5,42.5,
+2851a39f971851008dbec9970da34737,2026-11-21T20:00:00Z,Louisiana Ragin Cajuns,Coastal Carolina Chanticleers,2026-11-21T19:32:03+00:00,177.5,-113,-113,114.5,-113,-113,,,-10.5,49.5,
+96d5698a996feb547e098ba4b2178c0c,2026-11-21T20:00:00Z,New Mexico State Aggies,Delaware Blue Hens,2026-11-21T19:32:03+00:00,175.5,-113,-113,108.5,-113,-113,,,3.5,53.5,
+b3f08ccb712c2c765cc2d55b4608a3dd,2026-11-21T20:00:00Z,Kennesaw State Owls,Florida International Panthers,2026-11-21T19:32:03+00:00,124.5,-113,-113,115.5,-113,-113,,,-2.5,44.5,
