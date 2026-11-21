@@ -1,0 +1,7 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+ba44f7b0a5535ae2369e8ea165fb287f,2026-11-21T19:00:00Z,Tulsa Golden Hurricane,Charlotte 49ers,2026-11-21T18:30:30+00:00,195.5,-113,-113,109.5,-113,-113,,,-22.5,51.5,
+d7b3c2454c6b34f734497049e744bab0,2026-11-21T19:00:00Z,Jacksonville State Gamecocks,Missouri State Bears,2026-11-21T18:30:30+00:00,169.5,-113,-113,115.5,-113,-113,,,-10.5,52.5,
+347054d00e6c0020484eb64f1ad1b58d,2026-11-21T19:00:00Z,Sam Houston State Bearkats,Middle Tennessee Blue Raiders,2026-11-21T18:30:30+00:00,95.5,-113,-113,142.5,-113,-113,,,6.5,48.5,
+bd9d4f32b0b91c0140a3dd9574f8ae13,2026-11-21T19:30:00Z,Appalachian State Mountaineers,UL Monroe Warhawks,2026-11-21T18:30:30+00:00,143.5,-113,-113,135.5,-113,-113,,,-13.5,50.5,
+3099e24c0ab2767eb9c56f6ef5eeefc2,2026-11-21T19:30:00Z,Florida Atlantic Owls,South Florida Bulls,2026-11-21T18:30:30+00:00,118.5,-113,-113,196.5,-113,-113,,,1.5,63.5,
+725c6205de38f91b507a880c139eda54,2026-11-21T19:30:00Z,Illinois Fighting Illini,Iowa Hawkeyes,2026-11-21T18:30:30+00:00,110.5,-113,-113,154.5,-113,-113,,,9.5,40.5,
