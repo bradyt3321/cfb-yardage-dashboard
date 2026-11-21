@@ -1,0 +1,4 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+f247efd606eabe7d3d87504bc3af43b4,2026-11-21T00:35:00Z,Duke Blue Devils,Clemson Tigers,2026-11-21T00:34:24+00:00,158.5,-113,-113,110.5,-113,-113,,,-12.5,41.5,
+9cf7e21a18746ad426fd1d901bdd0a88,2026-11-21T01:00:00Z,Air Force Falcons,UTEP Miners,2026-11-21T00:34:24+00:00,366.5,-113,-113,128.5,-113,-113,,,-22.5,48.5,
+59cb6c9beeb879b864784348e3803ff8,2026-11-21T01:00:00Z,Michigan State Spartans,Oregon Ducks,2026-11-21T00:34:24+00:00,80.5,-115,-111,115.5,-113,-113,,,19.5,42.5,
