@@ -1,0 +1,7 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+bd9d4f32b0b91c0140a3dd9574f8ae13,2026-11-21T19:30:00Z,Appalachian State Mountaineers,UL Monroe Warhawks,2026-11-21T19:01:01+00:00,143.5,-113,-113,135.5,-113,-113,,,-13.5,50.5,
+3099e24c0ab2767eb9c56f6ef5eeefc2,2026-11-21T19:30:00Z,Florida Atlantic Owls,South Florida Bulls,2026-11-21T19:01:01+00:00,118.5,-113,-113,196.5,-113,-113,,,1.5,63.5,
+725c6205de38f91b507a880c139eda54,2026-11-21T19:30:00Z,Illinois Fighting Illini,Iowa Hawkeyes,2026-11-21T19:01:01+00:00,106.5,-113,-113,158.5,-113,-113,,,8.5,41.5,
+2851a39f971851008dbec9970da34737,2026-11-21T20:00:00Z,Louisiana Ragin Cajuns,Coastal Carolina Chanticleers,2026-11-21T19:01:01+00:00,177.5,-113,-113,114.5,-113,-113,,,-10.5,49.5,
+96d5698a996feb547e098ba4b2178c0c,2026-11-21T20:00:00Z,New Mexico State Aggies,Delaware Blue Hens,2026-11-21T19:01:01+00:00,175.5,-113,-113,108.5,-113,-113,,,3.5,53.5,
+b3f08ccb712c2c765cc2d55b4608a3dd,2026-11-21T20:00:00Z,Kennesaw State Owls,Florida International Panthers,2026-11-21T19:01:01+00:00,124.5,-113,-113,115.5,-113,-113,,,-2.5,44.5,
