@@ -1,0 +1,5 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+0a1a6c2630e51e32d24695f02c0b3f23,2026-11-21T21:00:00Z,Troy Trojans,Georgia Southern Eagles,2026-11-21T20:55:51+00:00,167.5,-113,-113,113.5,-113,-113,,,8.5,47.5,
+e17410526acddf2500fb788f40901b3f,2026-11-21T21:00:00Z,Marshall Thundering Herd,Georgia State Panthers,2026-11-21T20:55:51+00:00,170.5,-113,-113,184.5,-113,-113,,,-2.5,56.5,
+cc2b1d4b7378697dc11c744aeb015af9,2026-11-21T21:00:00Z,North Dakota State Bison,Northern Illinois Huskies,2026-11-21T20:55:51+00:00,191.5,-113,-113,100.5,-113,-113,,,-25.5,46.5,
+6d977752327ee29e19d3e1856683efee,2026-11-21T21:00:00Z,Southern Mississippi Golden Eagles,South Alabama Jaguars,2026-11-21T20:55:51+00:00,175.5,-113,-113,246.5,-113,-113,,,5.5,65.5,
