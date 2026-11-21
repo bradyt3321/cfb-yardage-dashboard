@@ -1,0 +1,13 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+2851a39f971851008dbec9970da34737,2026-11-21T20:00:00Z,Louisiana Ragin Cajuns,Coastal Carolina Chanticleers,2026-11-21T19:30:53+00:00,177.5,-113,-113,114.5,-113,-113,,,-10.5,49.5,
+96d5698a996feb547e098ba4b2178c0c,2026-11-21T20:00:00Z,New Mexico State Aggies,Delaware Blue Hens,2026-11-21T19:30:53+00:00,175.5,-113,-113,108.5,-113,-113,,,3.5,53.5,
+b3f08ccb712c2c765cc2d55b4608a3dd,2026-11-21T20:00:00Z,Kennesaw State Owls,Florida International Panthers,2026-11-21T19:30:53+00:00,124.5,-113,-113,115.5,-113,-113,,,-2.5,44.5,
+c3b7f980521e9fb576ce8dbd49a9f7de,2026-11-21T20:30:00Z,Texas Longhorns,Arkansas Razorbacks,2026-11-21T19:30:53+00:00,153.5,-113,-113,78.5,-113,-113,,,-18.5,46.5,
+1a3e1206e330ec66aa9a0549b4d3409c,2026-11-21T20:30:00Z,Baylor Bears,Texas Tech Red Raiders,2026-11-21T19:30:53+00:00,127.5,-113,-113,196.5,-113,-113,,,5.5,57.5,
+7f9809c817e27ec2d9f8a24e8e19a8ff,2026-11-21T20:30:00Z,Florida State Seminoles,NC State Wolfpack,2026-11-21T19:30:53+00:00,188.5,-113,-113,125.5,-113,-113,,,-10.5,56.5,
+6b40f07e146bab0dba574f0d3b07659e,2026-11-21T20:30:00Z,Washington Huskies,Indiana Hoosiers,2026-11-21T19:30:53+00:00,75.5,-113,-113,142.5,-113,-113,,,9.5,44.5,
+0cdac6d2b6c2cbfb0f734a8cdfbe086e,2026-11-21T20:30:00Z,Tennessee Volunteers,LSU Tigers,2026-11-21T19:30:53+00:00,174.5,-113,-113,110.5,-113,-113,,,1.5,45.5,
+ae9b81f4814e1d9dae835a13f4245ce3,2026-11-21T20:30:00Z,Michigan Wolverines,UCLA Bruins,2026-11-21T19:30:53+00:00,120.5,-113,-113,103.5,-113,-113,,,3.5,36.5,
+59e78be3159c6fdb928c6737f6ff68e4,2026-11-21T20:30:00Z,UConn Huskies,Old Dominion Monarchs,2026-11-21T19:30:53+00:00,189.5,-113,-113,99.5,-113,-113,,,-13.5,47.5,
+3a5bb507e8305c5de6aa0b6c1e43e638,2026-11-21T20:30:00Z,Penn State Nittany Lions,Rutgers Scarlet Knights,2026-11-21T19:30:53+00:00,202.5,-113,-113,96.5,-113,-115,,,-25.5,48.5,
+5c082e013b5328e3db1def552628765f,2026-11-21T20:45:00Z,Oklahoma Sooners,Texas A&M Aggies,2026-11-21T19:30:53+00:00,105.5,-113,-113,85.5,-113,-113,,,-6.5,36.5,
