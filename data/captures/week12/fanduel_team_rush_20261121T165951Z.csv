@@ -1,0 +1,12 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+4336f3fcf7e287f1609c1822fef8f63d,2026-11-21T17:00:00Z,Army Black Knights,East Carolina Pirates,2026-11-21T16:59:51+00:00,277.5,-113.0,-113.0,150.5,-113.0,-113.0,,,-4.5,45.5,
+606426f36cb32d1843f6abbe6f683b76,2026-11-21T17:00:00Z,Kansas Jayhawks,BYU Cougars,2026-11-21T16:59:51+00:00,135.5,-113.0,-113.0,139.5,-113.0,-113.0,,,4.5,46.5,
+561b0188c024ce49bdd77391f44dc605,2026-11-21T17:00:00Z,Boston College Eagles,Syracuse Orange,2026-11-21T16:59:51+00:00,176.5,-113.0,-113.0,139.5,-113.0,-113.0,,,2.5,52.5,
+01aaf98c4f62bba0a964a9b400666516,2026-11-21T17:00:00Z,Cincinnati Bearcats,Colorado Buffaloes,2026-11-21T16:59:51+00:00,186.5,-113.0,-113.0,141.5,-113.0,-113.0,,,-3.5,56.5,
+8e40a0e75da5dc1e30817debee95239d,2026-11-21T17:00:00Z,Florida Gators,Vanderbilt Commodores,2026-11-21T16:59:51+00:00,181.5,-113.0,-113.0,84.5,-115.0,-113.0,,,-13.5,47.5,
+ffbcf81433c3067468208b6d5b91aa83,2026-11-21T17:00:00Z,Georgia Tech Yellow Jackets,Wake Forest Demon Deacons,2026-11-21T16:59:51+00:00,120.5,-113.0,-113.0,201.5,-113.0,-113.0,,,22.5,55.5,
+af2b2232df20a470d516dbe474a63132,2026-11-21T17:00:00Z,Navy Midshipmen,Memphis Tigers,2026-11-21T16:59:51+00:00,333.5,-113.0,-113.0,185.5,-113.0,-113.0,,,2.5,68.5,
+ce564e264da03668e25badeb960753cc,2026-11-21T17:00:00Z,Minnesota Golden Gophers,Northwestern Wildcats,2026-11-21T16:59:51+00:00,101.5,-113.0,-113.0,121.5,-113.0,-113.0,,,2.5,41.5,
+b40838a45d9aeb25fb42668402caae13,2026-11-21T17:00:00Z,Tulane Green Wave,North Texas Mean Green,2026-11-21T16:59:51+00:00,153.5,-113.0,-113.0,170.5,-113.0,-113.0,,,7.5,56.5,
+d0761a1e0c66eaf4608f5c61ac79b3c2,2026-11-21T17:00:00Z,Purdue Boilermakers,Wisconsin Badgers,2026-11-21T16:59:51+00:00,,,,,,,,,4.5,46.5,
+1f59b6d72003ce254b32c815e73b252d,2026-11-21T17:30:00Z,Virginia Cavaliers,North Carolina Tar Heels,2026-11-21T16:59:51+00:00,138.5,-113.0,-113.0,115.5,-113.0,-113.0,,,1.5,41.5,
