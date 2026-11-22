@@ -1,0 +1,4 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+0bb0c3e15e4a8004f708162c14c5575d,2026-11-22T00:40:00Z,Missouri Tigers,Kentucky Wildcats,2026-11-22T00:35:25+00:00,140.5,-113,-113,127.5,-113,-113,,,-5.5,50.5,
+fa98066b4b400fb6af0672e170cc584a,2026-11-22T00:40:00Z,Notre Dame Fighting Irish,SMU Mustangs,2026-11-22T00:35:25+00:00,190.5,-113,-113,83.5,-113,-113,,,-20.5,55.5,
+9f3f8efae55dbb803964a5107350e263,2026-11-22T01:00:00Z,UAB Blazers,UTSA Roadrunners,2026-11-22T00:35:25+00:00,182.5,-113,-113,177.5,-113,-113,,,3.5,49.5,
