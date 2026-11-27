@@ -1,0 +1,4 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+e0b30f1dada22d4a2565ce663bc0741a,2026-11-27T17:01:00Z,Akron Zips,Buffalo Bulls,2026-11-27T17:00:58+00:00,140.5,-113,-113,210.5,-113,-113,,,7.5,50.5,
+58cd1284193cd30679325c8494f546e6,2026-11-27T17:01:00Z,Ohio Bobcats,Toledo Rockets,2026-11-27T17:00:58+00:00,134.5,-113,-113,136.5,-113,-113,,,3.5,44.5,
+1f0a9e7f76830b196133518ae01bb113,2026-11-27T17:01:00Z,UTSA Roadrunners,Tulsa Golden Hurricane,2026-11-27T17:00:58+00:00,188.5,-113,-113,142.5,-113,-113,,,1.5,55.5,
