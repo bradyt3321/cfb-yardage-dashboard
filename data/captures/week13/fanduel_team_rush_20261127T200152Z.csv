@@ -1,0 +1,5 @@
+game_id_oddsapi,commence_time,home,away,pull_time_utc,rush_home,rush_home_over,rush_home_under,rush_away,rush_away_over,rush_away_under,totyds_home,totyds_away,fd_spread_home,fd_total,fd_last_update
+a72c11afb95ca2c2eb057c7f2a8e376b,2026-11-27T20:04:00Z,South Alabama Jaguars,Appalachian State Mountaineers,2026-11-27T20:01:52+00:00,,,,,,,,,-3.5,56.5,
+6a08fbc3f2fce16533f36dccc4dce347,2026-11-27T20:30:00Z,Florida State Seminoles,Florida Gators,2026-11-27T20:01:52+00:00,130.5,-113.0,-113.0,194.5,-113.0,-113.0,,,6.5,54.5,
+a750f21dccb9df459196adc8dcf5ffe4,2026-11-27T20:30:00Z,Memphis Tigers,Temple Owls,2026-11-27T20:01:52+00:00,226.5,-113.0,-113.0,196.5,-113.0,-113.0,,,-19.5,66.5,
+5fc40a6a68f1652a38d2844a90358df2,2026-11-27T20:30:00Z,San Jose State Spartans,North Dakota State Bison,2026-11-27T20:01:52+00:00,81.5,-113.0,-113.0,144.5,-113.0,-113.0,,,9.5,40.5,
